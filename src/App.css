@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: imported;
+  /* src: url(./font/the\ unseen.ttf); */
+}
+
+body {
+  font-family: imported;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.black{
+  color: #000000 !important;
+}
+
+.main{
+  /* background-color: #e7f8f1; */
+  /* font-family: italic; */
+  /* height: 785px; */
+}
+
+
+
+
+
+
+
+
+

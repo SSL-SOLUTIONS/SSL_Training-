@@ -1,0 +1,21 @@
+.privacy-bg{
+    background-color: rgb(241, 241, 241);
+}
+
+.privacy-bg a{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+}
+
+.privacy-bg .active{
+    /* color: #000000 !important; */
+    /* border-bottom:3px solid rgb(18, 135, 111); */
+}
+
+.privacy-bg a:active{
+    color: #000000 !important;
+    border-bottom:3px solid rgb(18, 135, 111);
+    
+}

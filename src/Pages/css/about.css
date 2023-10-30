@@ -1,0 +1,124 @@
+.about-heading {
+    font-size: 62px;
+    font-weight: 700;
+}
+
+.about-main p {
+    font-size: 21px;
+}
+
+.about-test h1 {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.about-card-img img {
+    width: 110px;
+    height: 110px;
+}
+
+.card h3 {
+    font-weight: 800;
+
+}
+
+.about-1-bg {
+    background-image: url(https://testrabbit.co/wp-content/uploads/2023/06/Page-Seprator.png) !important;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width:600px) {
+    .about-1-bg {
+        height: 900px;
+    }
+    .info-bg{
+        /* padding: 10px; */
+    }
+}
+
+.info-bg{
+    border-radius: 20px;
+}
+
+.bg-set {
+    position: relative;
+    top: 150px;
+}
+
+.counter {
+    font-size: 100px;
+}
+
+.my-font{
+    font-size: 52px;
+    font-weight: 800;
+}
+
+.info h4{
+    line-height: 1.3;
+    color: rgb(65, 65, 65);
+}
+
+.contacting{
+    font-weight: 700;
+
+}
+
+.info-heading p {
+    font-size: 22px;
+}
+
+.info-hover:hover{
+    cursor: pointer;
+    color: rgb(18, 135, 111);
+}
+
+.contact-btn{
+    padding: 25px;
+    width: 250px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background: rgb(18, 135, 111);
+    color: white;
+    transition: 0.5s;
+    font-weight: 600;
+
+}
+
+.contact-btn:hover{
+    background-color: white;
+    outline: 1px solid rgb(18, 135, 111);
+    color: rgb(18, 135, 111);
+    transition: 0.5s;
+}
+
+.companies-about{
+    font-size: 22px;
+    color: rgb(65, 65, 65);
+}
+
+.inte-card img{
+    width: 80px;
+}
+
+.inte-card p{
+    font-size: 12px;
+}
+
+.social{
+    font-size: 22px;
+    position: relative;
+    bottom: 12px;
+}
+
+.social-heading{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.rounded-card{
+    border-radius: 12px;
+}

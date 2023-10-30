@@ -1,0 +1,22 @@
+.still-bg{
+    background-color: #e7f8f1;
+    height: 500px;
+}
+
+.still-heading{
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 68px;
+}
+
+.demo-btn_2 button{
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .still-heading{
+        font-size: 33px;
+        line-height: 40px;
+    }
+
+  }

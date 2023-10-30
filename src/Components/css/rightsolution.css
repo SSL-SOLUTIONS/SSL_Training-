@@ -1,0 +1,61 @@
+.right-bg-image{
+    background-image: url("/public/img_03.png");
+    width: 100%;
+    height: 500px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 999;
+    opacity: 1;
+    bottom: 50px;
+    animation: animateWave 2s linear infinite;
+    padding-top: 30px;
+    padding-left: 30px;
+  }
+
+  @media screen and (max-width:600px) {
+      .right-bg-image{
+        height: 680px;
+      }
+  }
+
+  @media screen and (min-width:600px) and (max-width:880px) {
+      .right-bg-image{
+        background-color: black;
+        background-image: none;
+        border-radius: 20px;
+        margin-bottom: 50px;
+      }
+  }
+
+.right-input input{
+    width: 100%;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    padding: 12px;
+
+}
+
+.right-input button{
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(18, 135, 111);
+    width: 120px;
+    height: 40px;
+    
+}
+
+  
+@keyframes animateWave {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  }

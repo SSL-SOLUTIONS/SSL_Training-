@@ -1,0 +1,39 @@
+.pricing-btn{
+    border: none;
+    outline: none;
+    background-color: rgb(18, 135, 111);
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: 0.8s;
+}
+
+.pricing-btn:hover{
+    background-color: white;
+    border: 1px solid rgb(18, 135, 111);
+    color: rgb(18, 135, 111);
+    transition: 0.8s;
+
+}
+
+.caret{
+    float: right;
+    cursor: pointer;    
+    margin-top: 25px;
+}
+
+.my-color{
+    color: rgb(18, 135, 111);
+}
+.my-color:hover{
+    color: rgb(18, 135, 111);
+}
+
+
+@media screen and (max-width:600px){
+       .my-font{
+            font-size: 44px;
+       } 
+}
