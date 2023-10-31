@@ -2,12 +2,14 @@ import React, { useState } from 'react'
 import '../Pages/css/pricing.css'
 import RightSolution from '../Components/RightSolution'
 import CarouselCard from '../Components/CarouselCard'
+import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 function Pricing() {
 
     return (
         <div>
-
+            <Navbar/>
             <div className='container-fluid pricing bg-light'>
 
                 <div className='container main-payment text-center'>
@@ -214,12 +216,8 @@ function Pricing() {
                 </div>
             </div>
 
-
-
-
-
             <RightSolution />
-
+            <Footer/>
         </div>
     )
 }

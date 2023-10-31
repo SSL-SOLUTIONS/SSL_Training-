@@ -3,19 +3,31 @@
 }
 
 .privacy-bg a{
-    font-size: 20px;
+    font-size: 17px;
     color: gray;
     text-align: center;
     text-decoration: none;
-}
-
-.privacy-bg .active{
-    /* color: #000000 !important; */
-    /* border-bottom:3px solid rgb(18, 135, 111); */
 }
 
 .privacy-bg a:active{
     color: #000000 !important;
     border-bottom:3px solid rgb(18, 135, 111);
     
+}
+
+.my-text{
+    color: rgb(71, 68, 68);
+    font-size: 22px;
+    line-height: 1.3;   
+}
+
+.font-privacy{
+    font-size: 44px;
+    font-weight: 800;
+}
+
+@media screen and (max-width:600px){
+    .font-privacy{
+        font-size: 34px;
+    }
 }

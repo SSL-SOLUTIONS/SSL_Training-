@@ -1,13 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../Pages/css/blog.css'
-import RightSolution from '../Components/RightSolution'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import '../css/blog.css'
+import RightSolution from '../../Components/RightSolution'
+import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar'
 
 
-
-function Blog() {
+function Uncategorized() {
   return (
     <div>
       <Navbar/>
@@ -186,18 +185,19 @@ function Blog() {
 
 
 
-
-
-
-
-
-
 <RightSolution/>
 
 <Footer/>
+
+
+
+
+
+
 
     </div>
   )
 }
 
-export default Blog
+
+export default Uncategorized

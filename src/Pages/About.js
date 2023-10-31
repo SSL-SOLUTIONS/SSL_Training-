@@ -1,11 +1,14 @@
 import React from 'react'
 import '../Pages/css/about.css'
 import CountUp from "react-countup";
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 
 function About() {
     return (
         <div>
+            <Navbar/>
             <div className='container mt-5 about-bg'>
                 <div className='row'>
                     <div className='col-lg-5 mt-5 about-main'>
@@ -142,7 +145,6 @@ function About() {
                     <br></br>
                     <p>letsremotify, LLC 900 Lafayette St #201, <br></br><span><p>Santa Clara, CA 95050, USA</p></span></p>
                     <p>Telephone: <span className='info-hover'>1 (507) 338-5323</span> <br></br> <span>Email: <span className='info-hover'>SSlSolution@.com</span></span></p>
-                    <p></p>
                     <br></br>
                     <button className='contact-btn'>Connect SSL Solution</button>
                 </div>
@@ -232,7 +234,7 @@ function About() {
 
 
 
-
+            <Footer/>
 
 
 

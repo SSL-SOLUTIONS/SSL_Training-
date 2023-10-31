@@ -1,19 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../Pages/css/privacy.css'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+// import '../Pages/css/privacy.css'
+import '../css/privacy.css'
 
-function Privacy() {
+function InformationCollection() {
   return (
     <div>
-      <Navbar/>
       <div className='container-fluid pb-5 bg-light'>
         <div className='container'>
           <div className='pt-5 policy-text text-center'>
-            <h1 className='black pt-5 font-privacy'>
-              PRIVACY POLICY
-            </h1>
+            <h1 className='black pt-5 font-privacy'>PRIVACY POLICY</h1>
             <h4 className='mb-5'>
               Last updated: February 12, 2019
             </h4>
@@ -39,7 +35,7 @@ function Privacy() {
       </div>
 
       <div className='container mt-5'>
-        <h1 className='my-font black'>About TestRabbit</h1>
+        <h1 className='my-font black'>Information Collection</h1>
         <p className='evulate-text'>
           Code together before you work together. See how candidates collaborate and communicate on real-life problems.
         </p>
@@ -112,10 +108,11 @@ function Privacy() {
 
       </div>
 
-    <Footer/>
 
     </div>
   )
 }
 
-export default Privacy
+
+
+export default InformationCollection

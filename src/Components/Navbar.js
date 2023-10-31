@@ -32,13 +32,13 @@ const Navbar = () => {
                                 <NavLink to="/privacy" className="nav-link mx-2 mt-2">Privacy Policy</NavLink>
                             </li>
                             <li className="nav-item mt-1">
-                                <NavLink to="blog" className="nav-link mx-2 mt-2">Blogs</NavLink>
+                                <NavLink to="/blog" className="nav-link mx-2 mt-2">Blogs</NavLink>
                             </li>
                             <li className="nav-item mt-1">
                                 <NavLink to="/contact" className="nav-link mx-2 mt-2">Contact Us</NavLink>
                             </li>
                             <li className="nav-item mt-2 ml-4">
-                                <button className='my-btn'>Create Account</button>
+                                <button className='my-btn'><NavLink to='/SignUp'>Create Account</NavLink></button>
                             </li>
                         </ul>
                     </div>

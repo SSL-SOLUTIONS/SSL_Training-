@@ -1,13 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import '../Pages/css/blog.css'
-import RightSolution from '../Components/RightSolution'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import '../css/blog.css'
+import RightSolution from '../../Components/RightSolution'
+import Footer from '../../Components/Footer'
+import Navbar from '../../Components/Navbar'
 
 
-
-function Blog() {
+function Category1() {
   return (
     <div>
       <Navbar/>
@@ -142,42 +141,10 @@ function Blog() {
             </div>
           </div>
 
-          <div className='col-lg-4 card-set'>
-            <div className='card bg-white'>
-              <img src='http://testrabbit.co/wp-content/uploads/2023/05/unsplash_NWcH4mbPRZg.jpg' className='w-100 rounded-0 h-100'></img>
-              <div className='container'>
-                <h3 className='mt-3'>Breaking News</h3>
-                <p className='mt-3 blog-set'>
-                  <i class="fa-solid fa-user ml-2 mr-1"></i>Ali, <span className='text-center'><i class="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023</span>
-                </p>
-                <hr></hr>
-                <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='col-lg-4 card-set mb-5 pb-5'>
-            <div className='card bg-white'>
-              <img src='http://testrabbit.co/wp-content/uploads/2023/05/unsplash_NWcH4mbPRZg.jpg' className='w-100 rounded-0 h-100'></img>
-              <div className='container'>
-                <h3 className='mt-3'>Breaking News</h3>
-                <p className='mt-3 blog-set'>
-                  <i class="fa-solid fa-user ml-2 mr-1"></i>Ali, <span className='text-center'><i class="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023</span>
-                </p>
-                <hr></hr>
-                <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
-                </p>
-              </div>
-            </div>
-          </div>
-
+          
         </div>
 
       </div>
-
 
 
 
@@ -200,4 +167,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default Category1

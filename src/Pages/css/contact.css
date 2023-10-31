@@ -1,0 +1,19 @@
+.contact-content i{
+    margin-left: 15px;
+}
+
+.contact-bg{
+    background-color: #f8f9fa!important;
+    border-radius: 13px;
+    padding: 10px;
+}
+
+.contact-image{
+    width: 700px;
+    height: 550px;
+}
+
+.contact-content p{
+    color: rgb(76, 72, 72);
+    font-size: 20px;
+}

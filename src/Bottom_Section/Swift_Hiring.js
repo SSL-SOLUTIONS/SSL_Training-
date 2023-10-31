@@ -1,15 +1,14 @@
 import React from 'react'
 import '../Bottom_Section/css/carousel.css'
 import Carousel from '../Bottom_Section/Carousel';
-
+import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer'
 
 function Swift_Hiring() {
     return (
         <>
+        <Navbar/>
             <div className='container-fluid bg-light' style={{marginTop:"-48px"}}>
-                <h1>Hello sbisohvoishvio</h1>
-                <h1>Hello sbisohvoishvio</h1>
-                <h1>Hello sbisohvoishvio</h1>
 
                 <div className='text-center container mt-5'>
 
@@ -37,6 +36,8 @@ function Swift_Hiring() {
             </div>
 
             <Carousel />
+
+        <Footer/>
 
         </>
 
