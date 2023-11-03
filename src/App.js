@@ -1,4 +1,4 @@
-import { Navigate } from 'react-router-dom';
+import { BrowserRouter, Navigate } from 'react-router-dom';
 import './App.css';
 import Navbar from './Components/Navbar';
 import './Components/css/navbar.css';
@@ -24,34 +24,30 @@ import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
-    <>
-      <div className='main'>
-        <Router>
-          <Routes>
+    <div className='app'>
+      <BrowserRouter>
+        <Routes>
           <Route path='navbar' element={<Navbar />} />
-            <Route path='/' element={<Swift_Hiring />} />
-            <Route path='/about' element={<About />} />
-            
-            <Route path='/blog' element={<Blog />} />
-            
-            <Route path='/pricing' element={<Pricing />} />
+          <Route path='/' element={<Swift_Hiring />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/pricing' element={<Pricing />} />
+          <Route path='/privacy' element={<Privacy />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/InformationCollection' element={<InformationCollection />} />
+          <Route path='/InformationUsage' element={<InformationUsage />} />
+          <Route path='/Category1' element={<Category1 />} />
+          <Route path='/Category2' element={<Category2 />} />
+          <Route path='/Category3' element={<Category3 />} />
+          <Route path='/Uncategorized' element={<Uncategorized />} />
+          <Route path='/Footer' element={<Footer />} />
+          <Route path='/Signup' element={<SignUp />} />
+        </Routes>
+      </BrowserRouter>
 
-            <Route path='/privacy' element={<Privacy />} />
-            
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/InformationCollection' element={<InformationCollection />} />
-            <Route path='/InformationUsage' element={<InformationUsage />} />
-            <Route path='/Category1' element={<Category1 />} />
-            <Route path='/Category2' element={<Category2 />} />
-            <Route path='/Category3' element={<Category3 />} />
-            <Route path='/Uncategorized' element={<Uncategorized />} />
-            <Route path='/Footer' element={<Footer />} />
-            <Route path='/Signup' element={<SignUp />} />
-          </Routes>
-        </Router>
+    </div>
 
-      </div>
-    </>
+
   );
 }
 
