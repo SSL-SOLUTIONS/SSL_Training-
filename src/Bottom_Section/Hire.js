@@ -13,7 +13,7 @@ const Hire = () => {
                                 Hire One-Stop Solution for Your Technical Assessments
                             </h1>
                             <h4>
-                            The Test Rabbit Evaluation Engine is a complete set of services that will assist you in hiring the greatest developers, evaluating programming expertise, and keeping them engaged with challenging coding exercises, collaborative pair-programming sessions, and gamified coding competitions.
+                            The SSL Training Evaluation Engine is a complete set of services that will assist you in hiring the greatest developers, evaluating programming expertise, and keeping them engaged with challenging coding exercises, collaborative pair-programming sessions, and gamified coding competitions.
                             </h4>
                         </div>
                     </div>

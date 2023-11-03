@@ -19,7 +19,7 @@ const Question = () => {
                                     <div className="card-header" id="headingOne">
                                         <h5 className="mb-0">
                                             <button className='according-icon btn text-dark'>
-                                                What is TestRabbit?
+                                                What is SSL Training?
                                             </button>
                                             <i className="accordion-icon btn fas fa-angle-down float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"></i>
 
@@ -36,7 +36,7 @@ const Question = () => {
                                     <div className="card-header" id="headingTwo">
                                         <h5 className="mb-0">
                                             <button className="accordion-icon btn">
-                                                What type of candidates does TestRabbit target?
+                                                What type of candidates does SSL Training target?
                                             </button>
                                             <i className="accordion-icon btn mt-1 accordion-icon btn fas fa-angle-down float-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"></i>
 
@@ -52,7 +52,7 @@ const Question = () => {
                                     <div className="card-header" id="headingThree">
                                         <h5 className="mb-0">
                                             <button className="accordion-icon btn" >
-                                                Does TestRabbit offer any support services?
+                                                Does SSL Training offer any support services?
                                             </button>
                                             <i className="accordion-icon btn mt-1 fas fa-angle-down float-right" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"></i>
 
@@ -69,7 +69,7 @@ const Question = () => {
                                     <div className="card-header" id="headingFour">
                                         <h5 className="mb-0">
                                             <button className="accordion-icon btn" >
-                                                How does TestRabbit make hiring more efficient?
+                                                How does SSL Training make hiring more efficient?
                                             </button>
                                             <i className="accordion-icon btn mt-1 fas fa-angle-down float-right" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree"></i>
 
@@ -86,7 +86,7 @@ const Question = () => {
                                     <div className="card-header" id="headingFive">
                                         <h5 className="mb-0">
                                             <button className="accordion-icon btn" >
-                                                How can TestRabbit help me find the best talent for my company?
+                                                How can SSL Training help me find the best talent for my company?
                                             </button>
                                             <i className="accordion-icon btn mt-1 fas fa-angle-down float-right" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree"></i>
 

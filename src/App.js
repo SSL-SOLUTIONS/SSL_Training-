@@ -26,7 +26,6 @@ function App() {
   return (
     <>
       <div className='main'>
-
         <Router>
           <Routes>
           <Route path='navbar' element={<Navbar />} />
