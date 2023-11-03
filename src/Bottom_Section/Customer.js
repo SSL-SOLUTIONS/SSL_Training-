@@ -12,7 +12,7 @@ function Customer() {
                         Our Customers
                     </h1>
                     <p>
-                        Test Rabbit results-driven technical hiring solution is in common hands of top-notch global enterprises to hire top vetted talent 2x times faster, but don’t take our word for it. Here’s what they had to say.
+                        SSL Training results-driven technical hiring solution is in common hands of top-notch global enterprises to hire top vetted talent 2x times faster, but don’t take our word for it. Here’s what they had to say.
                     </p>
                 </div>
                 <CarouselCard />

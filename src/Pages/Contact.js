@@ -59,7 +59,7 @@ function Contact() {
                   </h4>
                 </div>
                 <p className='ml-5'>
-                  Support@letsremotify.com
+                  Support@sslsoltution.com
                 </p>
               </div>
             </div>
@@ -73,7 +73,7 @@ function Contact() {
                   </h4>
                 </div>
                 <p className='ml-5'>
-                  letsremotify Agency L.L.C.
+                  SSlSolution Agency L.L.C.
                 </p>
               </div>
             </div>

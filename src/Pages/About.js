@@ -13,7 +13,7 @@ function About() {
                 <div className='row'>
                     <div className='col-lg-5 mt-5 about-main'>
                         <h1 className='black about-heading'>
-                            What does TestRabbit do?
+                            What does SSL Training do?
                         </h1>
                         <p>
                             etsremotify makes the remote hiring process easy and rewarding for both companies and 
@@ -31,7 +31,7 @@ function About() {
 
             {/* Card Start */}
             <div className='container about-test mt-5 text-center'>
-                <h1 className='mt-5 black'>About TestRabbit</h1>
+                <h1 className='mt-5 black'>About SSL Training</h1>
                 <h4>Code together before you work together. See how candidates collaborate and communicate on real-life problems.</h4>
             </div>
             <div className='container'>

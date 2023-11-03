@@ -8,7 +8,7 @@ function TestRabbit() {
 
                     <div className='main-section pb-5'>
                         <h1 className='mt-5 text-center'>
-                            Test Rabbit is a go-to platform to streamline your tech recruiting process
+                            SSL Training is a go-to platform to streamline your tech recruiting process
                         </h1>
                         <div className='container mt-5'>
                             <h4 className='font-weight-lighter'>Generate technical tests for talent in 1 minute</h4>

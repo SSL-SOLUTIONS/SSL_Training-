@@ -24,7 +24,7 @@ function Privacy() {
         <div className='container'>
           <div className='row'>
             <div className='col-lg-2'>
-              <NavLink to='/Privacy' className='active'>About TestRabbit</NavLink>
+              <NavLink to='/Privacy' className='active'>About SSL Training</NavLink>
             </div>
             <div className='col-lg-2'>
               <NavLink to='/InformationCollection'>Information Collection</NavLink>
@@ -39,7 +39,7 @@ function Privacy() {
       </div>
 
       <div className='container mt-5'>
-        <h1 className='my-font black'>About TestRabbit</h1>
+        <h1 className='my-font black'>About SSL Training</h1>
         <p className='evulate-text'>
           Code together before you work together. See how candidates collaborate and communicate on real-life problems.
         </p>
@@ -55,10 +55,10 @@ function Privacy() {
             <div className='mt-5 col-lg-5'>
               <div className='mt-5 inner-content'>
                 <h1 className='black font-weight-bolder my-font'>
-                  What does TestRabbit do?
+                  What does SSL Training do?
                 </h1>
                 <h4>
-                  The Test Rabbit Evaluation Engine is a complete set of services that will assist you in hiring the greatest developers, evaluating programming expertise, and keeping them engaged with challenging coding exercises, collaborative pair-programming sessions, and gamified coding competitions.
+                  The SSL Training Evaluation Engine is a complete set of services that will assist you in hiring the greatest developers, evaluating programming expertise, and keeping them engaged with challenging coding exercises, collaborative pair-programming sessions, and gamified coding competitions.
                 </h4>
               </div>
             </div>

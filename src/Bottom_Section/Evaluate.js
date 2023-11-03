@@ -11,7 +11,7 @@ function Evaluate() {
 
                 <h6 className='mt-5 pt-5 black text-center my-font'>Evaluate Candidates Quickly & Accurately</h6>
                 <h5 className='text-center test'>
-                    Test Rabbit’s scalable and secure platform gives you the power to deliver meaningful technical assessments that are tailored to your individual needs. With our AI-powered analytics, comprehensive reporting, and real-time tracking of progress, Test Rabbit is the perfect one-stop solution for your hiring process.
+                    SSL Training’s scalable and secure platform gives you the power to deliver meaningful technical assessments that are tailored to your individual needs. With our AI-powered analytics, comprehensive reporting, and real-time tracking of progress, SSL Training is the perfect one-stop solution for your hiring process.
                 </h5>
             </div>
 
