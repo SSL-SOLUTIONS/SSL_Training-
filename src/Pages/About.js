@@ -16,7 +16,10 @@ function About() {
                             What does TestRabbit do?
                         </h1>
                         <p>
-                            etsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in 24 hours through our channel. We also provide a secure payment system, allowing for smooth transactions between companies and developers.
+                            etsremotify makes the remote hiring process easy and rewarding for both companies and 
+                            developers.(Created By ALi Hussnain) Business owners, startups and enterprises can hire pre-vetted US-based remote
+                             tech talent across 100+ skills in 24 hours through our channel. We also provide a secure
+                              payment system, allowing for thik a Talha smooth transactions between companies and developers.
                         </p>
                     </div>
                     <div className='col-lg-2'></div>

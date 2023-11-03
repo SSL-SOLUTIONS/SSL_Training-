@@ -82,7 +82,7 @@ function Contact() {
 
 
           <div className='col-lg-6 banner-1 '>
-            <img src='contact-img.jpg' className='contact-image'></img>
+            <img src='contact-img.jpg' className='contact-image w-100'></img>
           </div>
         </div>
       </div>

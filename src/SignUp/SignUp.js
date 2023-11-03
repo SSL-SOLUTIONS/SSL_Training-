@@ -1,5 +1,6 @@
 import React from 'react'
 import '../SignUp/Style.css'
+import { NavLink } from 'react-router-dom'
 
 const SignUp = () => {
     return (
@@ -8,12 +9,13 @@ const SignUp = () => {
                 <div className='row'>
                     <div className='col-lg-6'>
                         <div className='sign-up-bg m-3 py-4 text-center'>
-
                             <img src='/login.png' className='mt-5 pt-3'></img>
                         </div>
                     </div>
 
-                    <div className='col-lg-6 mt-5 pt-5'>
+                    <div className='col-lg-1'></div>
+
+                    <div className='col-lg-5  mt-5 pt-5'>
                         <div className='heading-signup'>
                             <h2>Sign Up</h2>
                             <h6>
@@ -91,11 +93,12 @@ const SignUp = () => {
                                 <br></br>
                                 <br></br>
                                 <div className='mix'>
-                                    <button>SignUp</button>
+                                    <button className='pricing-btn w-50 ml-3'>SignUp</button>
                                     <br></br>
                                     <br></br>
-                                    Already have an account?
-                                    <a href=''>Login</a>
+                                    <h5>Already have an account?
+                                    <NavLink to="/Login">Login</NavLink>
+                                    </h5>
                                 </div>
 
                             </form>

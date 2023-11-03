@@ -2,10 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 // import '../Pages/css/privacy.css'
 import '../css/privacy.css'
+import Navbar from '../../Components/Navbar'
+import Footer from '../../Components/Footer'
 
 function InformationCollection() {
   return (
     <div>
+      <Navbar/>
       <div className='container-fluid pb-5 bg-light'>
         <div className='container'>
           <div className='pt-5 policy-text text-center'>
@@ -108,6 +111,7 @@ function InformationCollection() {
 
       </div>
 
+      <Footer/>
 
     </div>
   )

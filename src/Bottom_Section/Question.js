@@ -28,6 +28,9 @@ const Question = () => {
                                     <div id="collapseOne" className="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                                         <div className="card-body text-dark">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Id velit ut tortor pretium viverra suspendisse potenti nullam ac.
+                                            (Created By Ali Hussnain)
+                                            (Created By Ali Hussnain Kida Talha Thik a)
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -45,6 +48,9 @@ const Question = () => {
                                     <div id="collapseTwo" className="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                                         <div className="card-body text-dark">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Id velit ut tortor pretium viverra suspendisse potenti nullam ac.
+                                            (Created By Ali Hussnain)
+                                            (Created By Ali Hussnain)
+                                            (Created By Ali Hussnain)
                                         </div>
                                     </div>
                                 </div>
@@ -61,7 +67,10 @@ const Question = () => {
                                     <div id="collapseThree" className="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                                         <div className="card-body text-dark">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Id velit ut tortor pretium viverra suspendisse potenti nullam ac.
-                                        </div>
+                                            (Created By Ali Hussnain)
+                                            (Created By Ali Hussnain)
+                                            (Created By Ali Hussnain)
+                                         </div>
                                     </div>
                                 </div>
 
@@ -78,6 +87,8 @@ const Question = () => {
                                     <div id="collapseFour" className="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
                                         <div className="card-body text-dark">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate. Id velit ut tortor pretium viverra suspendisse potenti nullam ac.
+                                            (Created By Ali Hussnain)
+                                             (Talha)                   
                                         </div>
                                     </div>
                                 </div>
