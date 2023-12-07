@@ -5,45 +5,92 @@
     z-index: 1;
     margin-top: -50px;
 */
-
-
-
-
-
+a{
+  text-decoration: none;
+}
 .my-btn {
-    padding: 12px;
-    background-color: rgb(18, 135, 111);
-    outline: 1px solid rgb(18, 135, 111);
-    border: none;
-    color: white;
-    font-weight: 700;
-    border-radius: 5px;
-    width: 180px;
-    transition: 0.7s;
-  }
-  
-  .my-btn:hover {
-    background-color: #e7f8f1;
-    color: rgb(18, 135, 111);
-    transition: 0.7s;
-  }
-  
-  .color {
-    color: rgb(18, 135, 111);
-  }
-  
-  .logo {
-    width: 110px;
-  }
-  
-  .navbar-nav li a:hover {
-    color: rgb(18, 135, 111);
-    cursor: pointer;
-    transition: 0.6s;
-  }
-  
-  .navbar-nav li a {
-    color: black;
+  padding: 12px;
+  background-color: rgb(18, 135, 111);
+  outline: 1px solid rgb(18, 135, 111);
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 180px;
+  transition: 0.7s;
+}
+
+.my-btn:hover {
+  background-color: #e7f8f1;
+}
+.my-btn > a:hover {
+  color: black !important;
+  font-weight: 500 !important;
+}
+
+.color {
+  color: rgb(18, 135, 111);
+}
+
+.logo {
+  width: 110px;
+}
+
+.navbar-nav li a:hover {
+  color: rgb(18, 135, 111);
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.navbar-nav li a {
+  color: black;
+  font-weight: 600;
+}
+
+
+.categories > label{
+      display: inline-block;
     font-weight: 600;
-  }
-  
+    font-size: 0.85rem;
+
+}
+.category-list {
+  align-self: center;
+}
+
+.category-list > select {
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+.category-list > option {
+  align-self: flex-start;
+}
+.category-list > select:hover {
+  color: rgb(18, 135, 111);
+  cursor: pointer;
+  transition: 0.6s;
+}
+.nav-item > button a{
+    color: white !important;
+    font-weight: 300 !important;
+}
+.nav-item select > option{
+    cursor: pointer;
+}
+.div-categ-back{
+  padding: 0;
+    margin-top: -9px;
+    height: 1vh;
+}
+
+.my-btn > a{
+  text-decoration: none;
+}
+
+.list-group > a{
+  min-width: 15vw;
+}

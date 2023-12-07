@@ -1,0 +1,38 @@
+.container-course {
+  transition: box-shadow 0.3s;
+  width: max-content;
+  padding: 0;
+  margin: 1rem 0;
+
+  border: 1px solid rgb(181, 179, 179);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.course-text {
+  padding: 0.7rem;
+  width: 15rem;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.course-text > p,
+h3,
+h5 {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+.course-image-cont {
+  max-width: max-content;
+  overflow: hidden;
+}
+.image-img {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 240px;
+  image-rendering: pixelated;
+}
+
+.container-course:hover {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}

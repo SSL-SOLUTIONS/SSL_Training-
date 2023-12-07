@@ -21,30 +21,39 @@ import Category3 from './Pages/BlogCategory/Category3'
 import Uncategorized from './Pages/BlogCategory/Uncategorized'
 import SignUp from './SignUp/SignUp';
 import Login from './SignUp/Login';
+import Courses from './Pages/courses/Courses';
+import AdminCoursesPanel from './Pages/AdminCoursesPannel/AdminCoursesPannel';
+import CourseDetails from './Pages/CourseDetails/CourseDetails';
 
 
 function App() {
   return (
     <>
-      <div className='main'>
+      <div className="main">
         <Router>
           <Routes>
-            <Route path='navbar' element={<Navbar />} />
-            <Route path='/' element={<Swift_Hiring />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/blog' element={<Blog />} />
-            <Route path='/pricing' element={<Pricing />} />
-            <Route path='/privacy' element={<Privacy />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/InformationCollection' element={<InformationCollection />} />
-            <Route path='/InformationUsage' element={<InformationUsage />} />
-            <Route path='/Category1' element={<Category1 />} />
-            <Route path='/Category2' element={<Category2 />} />
-            <Route path='/Category3' element={<Category3 />} />
-            <Route path='/Uncategorized' element={<Uncategorized />} />
-            <Route path='/Footer' element={<Footer />} />
-            <Route path='/Signup' element={<SignUp />} />
-            <Route path='/Login' element={<Login />} />
+            <Route path="navbar" element={<Navbar />} />
+            <Route path="/" element={<Swift_Hiring />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/InformationCollection"
+              element={<InformationCollection />}
+            />
+            <Route path="/InformationUsage" element={<InformationUsage />} />
+            <Route path="/Category1" element={<Category1 />} />
+            <Route path="/Category2" element={<Category2 />} />
+            <Route path="/Category3" element={<Category3 />} />
+            <Route path="/Uncategorized" element={<Uncategorized />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/Footer" element={<Footer />} />
+            <Route path="/Signup" element={<SignUp />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/pannel" element={<AdminCoursesPanel />} />
+            <Route path="/courses/:courseId" element={<CourseDetails />} />
           </Routes>
         </Router>
       </div>
