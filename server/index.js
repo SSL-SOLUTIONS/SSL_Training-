@@ -20,6 +20,7 @@ app.use("/uploads", express.static("uploads"));
 // Configure session
 const secret = process.env.ACCESS_TOKEN_SECRET;
 
+
 app.use(
   session({
     secret: secret,
@@ -29,19 +30,19 @@ app.use(
   })
 );
 
+
+app.use((req, res, next) => {
+  const token = req.cookies.token || "";
+  req.headers["Authorization"] = `Bearer ${token}`;
+  next();
+});
+
 const PORT = 8080 || process.env.PORT;
 
 app.use("/uploads", express.static("uploads"));
 app.use("/auth", fileUploadRoutes);
 app.use("/protected", protectedRoute);
 app.use("/courses", coursesRoute);
-
-// Middleware to include token in request headers
-app.use((req, res, next) => {
-  const token = req.cookies.token || ""; // get the token from cookie or other storage
-  req.headers["Authorization"] = `Bearer ${token}`;
-  next();
-});
 
 app.listen(PORT, async () => {
   console.log(`Server is running on port ${PORT}`);

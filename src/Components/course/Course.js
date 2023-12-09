@@ -22,14 +22,14 @@ const Course = (props) => {
         />
       </div>
       <div className="course-text">
-        <h4>{props.title}</h4>
+        <h5>{props.title}</h5>
         <ReactStars
           count={5}
           onChange={ratingChanged}
-          size={22}
+          size={18}
           activeColor="#ffd700"
         />
-        <h6 style={{ fontWeight: "bolder" }}>Rs. {props.price} </h6>
+        <h6 >Rs. {props.price} </h6>
         <p>{props.desc}</p>
       </div>
     </div>

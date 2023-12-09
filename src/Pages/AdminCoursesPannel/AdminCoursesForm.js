@@ -91,7 +91,7 @@ const AdminCoursesForm = ({ onAddCourse }) => {
   return (
     <div className="container mb-5 mt-5">
       <h2>Add New Course</h2>
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit={handleSubmit} style={{margin: "0px"}}>
         <Form.Group className="mb-3" controlId="formBasicTitle">
           <Form.Label className="fw-bolder">Title:</Form.Label>
           <Form.Control

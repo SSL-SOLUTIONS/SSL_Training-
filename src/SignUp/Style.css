@@ -4,10 +4,10 @@
   height: 98%;
   border-radius: 12px;
 }
-.signup{
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
+.signup {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
 .sign-up-bg img {
   width: 75%;
 }
@@ -34,21 +34,35 @@
 .signup span {
   color: rgb(18, 135, 111);
 }
+.power-img {
+  width: 120px;
+  height: auto;
+}
+.power-cont > span{
+  font-size: 1.25rem;
+  font-weight: 700;
+} 
+.power-cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
 
 @media screen and (max-width: 990px) {
   .sign-up-bg {
-  display: none;
+    display: none;
   }
   .sign-up-bg img {
     display: none;
   }
-  .signup, .heading-signup{
+  .signup,
+  .heading-signup {
     width: 100%;
     display: grid;
     justify-content: center;
     align-items: center;
   }
-  form{
+  form {
     margin-left: 6rem;
   }
 }

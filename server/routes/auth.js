@@ -5,23 +5,13 @@ const jwt = require("jsonwebtoken");
 const { body, validationResult } = require("express-validator");
 const User = require("../models/User");
 const multer = require("multer");
-const { authenticateToken, authorizeRoles } = require("../middleware/auth");
+const {
+  authenticateToken,
+  authorizeRoles,
+  generateTokens,
+} = require("../middleware/auth");
+
 require("dotenv").config();
-
-function generateTokens(user) {
-  const accessToken = jwt.sign(
-    { id: user.id, email: user.email, role: user.role },
-    process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: "1h" }
-  );
-  const refreshToken = jwt.sign(
-    { id: user.id, email: user.email, role: user.role },
-    process.env.REFRESH_TOKEN_SECRET,
-    { expiresIn: "7d" }
-  );
-
-  return { accessToken, refreshToken };
-}
 
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
@@ -80,10 +70,11 @@ router.post(
 
       // Generate a JWT token for the user
       const { accessToken, refreshToken } = generateTokens(newUser);
+      console.log("Generated Token:", accessToken);
 
       res.status(201).json({ user: newUser, token: accessToken, refreshToken });
     } catch (error) {
-      console.error("Error during signup:", error);
+      console.error("Error generating token:", error);
       res.status(500).json({ message: "Internal Server Error" });
     }
   }
@@ -115,7 +106,7 @@ router.post(
       if (passwordMatch) {
         const { accessToken, refreshToken } = generateTokens(user);
 
-        // Set the access token as a cookie with an expiry time
+        // Set the session in a cookie with an expiry time
         res.cookie("token", accessToken, {
           httpOnly: true,
           maxAge: 30 * 60 * 1000,

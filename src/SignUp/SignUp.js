@@ -111,6 +111,7 @@ const SignUp = () => {
      console.log("Start of handleSignUp");
 
      const newErrors = validateForm();
+       console.log("Validation Errors:", newErrors);
      setErrors(newErrors);
 
      if (Object.keys(newErrors).length > 0) {

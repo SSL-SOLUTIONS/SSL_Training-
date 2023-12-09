@@ -1,7 +1,7 @@
-import React from 'react'
-import '../Pages/css/contact.css'
-import Navbar from '../Components/Navbar'
-import Footer from '../Components/Footer'
+import React from "react";
+import "../Pages/css/contact.css";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
 
 function Contact() {
   return (
@@ -20,7 +20,7 @@ function Contact() {
                     <strong>Phone</strong>
                   </h4>
                 </div>
-                <p className="ml-5">+971505217124 | +97142736234</p>
+                <p className="ml-5">+92-311-4767758</p>
               </div>
             </div>
 
@@ -33,8 +33,7 @@ function Contact() {
                   </h4>
                 </div>
                 <p className="ml-5">
-                  Office No.310, Diamond Business Center 2, Al Barsha South
-                  Third, Dubai, United Arab Emirates
+                  Office # 303, 3rd Floor, Landmark Plaza, Jail road, Lahore.
                 </p>
               </div>
             </div>
@@ -47,7 +46,7 @@ function Contact() {
                     <strong>Email</strong>
                   </h4>
                 </div>
-                <p className="ml-5">Support@sslsoltution.com</p>
+                <p className="ml-5">contact@ssltraining.com</p>
               </div>
             </div>
 
@@ -59,7 +58,7 @@ function Contact() {
                     <strong>Managed By</strong>
                   </h4>
                 </div>
-                <p className="ml-5">SSlSolution Agency L.L.C.</p>
+                <p className="ml-5">SSL Solutions Agency L.L.C.</p>
               </div>
             </div>
           </div>
@@ -83,4 +82,4 @@ function Contact() {
   );
 }
 
-export default Contact
+export default Contact;

@@ -1,5 +1,4 @@
-import React from "react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import {
   MDBContainer,
   MDBCol,
@@ -15,6 +14,17 @@ import {
 } from "mdb-react-ui-kit";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleLogout = () => {
+    // Clear the token from the cookie
+    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    // Clear any other session or local storage data if needed
+    localStorage.removeItem("token");
+
+    // Redirect to the login page
+    navigate("/login");
+  };
+
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -41,9 +51,11 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item mt-1">
-                <NavLink className="nav-link mx-2 mt-2" to="/pannel">
-                  Pannel
-                </NavLink>
+                
+                  <NavLink className="nav-link mx-2 mt-2" to="/pannel">
+                    Pannel
+                  </NavLink>
+              
               </li>
               <li className="nav-item mt-1">
                 <MDBNavbar expand="lg" light bgColor="light">
@@ -153,9 +165,15 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item mt-2 ml-4">
-                <button className="my-btn">
-                  <NavLink to="/SignUp">Create Account</NavLink>
-                </button>
+                {document.cookie.includes("token") ? (
+                  <button className="my-btn" onClick={handleLogout}>
+                    Logout
+                  </button>
+                ) : (
+                  <button className="my-btn">
+                    <NavLink to="/SignUp">Create Account</NavLink>
+                  </button>
+                )}
               </li>
             </ul>
           </div>

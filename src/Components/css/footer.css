@@ -42,10 +42,13 @@
 .social-icon{
     gap: 30px;
 }
+.power-container{
+	display: flex;
+}
 
 .powered-img{
-    width: 100px;
-    height: 50px;
+    width: 240px;
+    height: auto;
 }
 
 @media only screen and (max-width: 600px) {

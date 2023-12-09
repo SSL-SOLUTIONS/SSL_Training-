@@ -83,7 +83,7 @@ const Courses = () => {
           </select>
         </div>
         {/* Categories Section */}
-        <div className="categories">
+        <div className="categories filter">
           <label>Filter by Category:</label>
           <select
             value={selectedCategory}

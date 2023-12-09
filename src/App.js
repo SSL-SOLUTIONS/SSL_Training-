@@ -27,6 +27,7 @@ import CourseDetails from './Pages/CourseDetails/CourseDetails';
 
 
 function App() {
+  
   return (
     <>
       <div className="main">

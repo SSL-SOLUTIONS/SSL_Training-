@@ -5,11 +5,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.filter{
+  margin-right: 2rem;
+}
 .container-grid {
   padding: 1rem;
   display: grid;
-  gap: 18px;
-  grid-template-columns: repeat(auto-fill, 240px);
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, 252px);
   justify-content: center;
   height: auto;
 }
@@ -22,10 +25,12 @@
 .search-sort > label {
   margin-left: 1rem;
 }
-.categories > label, .search-sort-price > label , .search-sort-input > label{
-    display: inline-block;
-    font-weight: 600;
-    font-size: 0.85rem;
+.categories > label,
+.search-sort-price > label,
+.search-sort-input > label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 
 .categories > select,
@@ -47,4 +52,7 @@
     align-items: center;
     justify-content: space-evenly;
   }
+  .filter{
+  margin-right: 0;
+}
 }

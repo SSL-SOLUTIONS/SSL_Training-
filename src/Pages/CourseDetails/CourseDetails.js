@@ -36,9 +36,30 @@ const CourseDetails = () => {
     fetchCourseDetails();
   }, [courseId]);
 
-  const handleClick = ()=>{
-    navigate('/contact')
-  }
+  const handleClick = () => {
+    navigate("/contact");
+  };
+
+  // Check if the user is authenticated
+  useEffect(() => {
+    const checkAuthentication = async () => {
+      try {
+        const token = document.cookie
+          .split("; ")
+          .find((row) => row.startsWith("token="));
+
+        // If the token is not present, redirect to the login page
+        if (!token) {
+          navigate("/login");
+        }
+      } catch (error) {
+        console.error("Error checking authentication:", error);
+      }
+    };
+
+    checkAuthentication();
+  }, [navigate]);
+
   return (
     <>
       <Navbar />

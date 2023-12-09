@@ -85,7 +85,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
@@ -117,7 +117,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
@@ -152,7 +152,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
@@ -168,7 +168,7 @@ function Blog() {
                 </p>
                 <hr></hr>
                 <p>
-                  letsremotify makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
+                  SSL Solutions makes the remote hiring process easy and rewarding for both companies and developers. Business owners, startups and enterprises can hire pre-vetted US-based remote tech talent across 100+ skills in…
                 </p>
               </div>
             </div>
