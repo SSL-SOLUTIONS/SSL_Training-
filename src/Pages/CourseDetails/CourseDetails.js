@@ -44,9 +44,7 @@ const CourseDetails = () => {
   useEffect(() => {
     const checkAuthentication = async () => {
       try {
-        const token = document.cookie
-          .split("; ")
-          .find((row) => row.startsWith("token="));
+        const token = localStorage.getItem("token");
 
         // If the token is not present, redirect to the login page
         if (!token) {

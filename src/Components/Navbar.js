@@ -1,4 +1,5 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
+import React from "react";
 import {
   MDBContainer,
   MDBCol,
@@ -12,19 +13,21 @@ import {
   MDBListGroupItem,
   MDBRow,
 } from "mdb-react-ui-kit";
+import { useAuth } from "../AuthContext/AuthContext";
 
 const Navbar = () => {
+  const { user } = useAuth();
   const navigate = useNavigate();
+  const token = localStorage.getItem("token");
+
   const handleLogout = () => {
-    // Clear the token from the cookie
-    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    // Clear any other session or local storage data if needed
+    // Clear the token from localStorage
     localStorage.removeItem("token");
 
     // Redirect to the login page
     navigate("/login");
+    window.location.reload();
   };
-
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light">
@@ -36,7 +39,7 @@ const Navbar = () => {
 
           {/* Navbar toggle button for smaller screens */}
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -44,19 +47,19 @@ const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
           {/* Unordered list on the right side */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item mt-1">
-                
-                  <NavLink className="nav-link mx-2 mt-2" to="/pannel">
+              {user?.role === "admin" && (
+                <li className="nav-item mt-1">
+                  <NavLink className="nav-link mx-2 mt-2" to="/admin-panel">
                     Pannel
                   </NavLink>
-              
-              </li>
+                </li>
+              )}
               <li className="nav-item mt-1">
                 <MDBNavbar expand="lg" light bgColor="light">
                   <MDBContainer fluid>
@@ -165,13 +168,13 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item mt-2 ml-4">
-                {document.cookie.includes("token") ? (
+                {token ? (
                   <button className="my-btn" onClick={handleLogout}>
                     Logout
                   </button>
                 ) : (
                   <button className="my-btn">
-                    <NavLink to="/SignUp">Create Account</NavLink>
+                    <NavLink to="/login">Login</NavLink>
                   </button>
                 )}
               </li>

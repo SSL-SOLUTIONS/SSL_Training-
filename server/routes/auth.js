@@ -9,7 +9,7 @@ const {
   authenticateToken,
   authorizeRoles,
   generateTokens,
-} = require("../middleware/auth");
+} = require("../middleware/middlewareAuth");
 
 require("dotenv").config();
 

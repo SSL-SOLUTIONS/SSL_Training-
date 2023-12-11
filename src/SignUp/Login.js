@@ -1,7 +1,15 @@
+// Import necessary modules
 import React, { useState } from "react";
 import "../SignUp/Style.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import Axios from "axios";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+
+// Function to store token securely in localStorage
+const storeToken = (token) => {
+  localStorage.setItem("token", token);
+};
 
 const Login = () => {
   const navigate = useNavigate();
@@ -18,6 +26,7 @@ const Login = () => {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
+  // Function to handle login and store the token
   const handleLogIn = async (e) => {
     e.preventDefault();
 
@@ -36,16 +45,13 @@ const Login = () => {
         "http://localhost:8080/auth/login",
         formData
       );
+
       const { user, accessToken } = response.data;
-      // Check if the token is defined before setting the cookie
       if (accessToken) {
-        // Set the session in a cookie
-        document.cookie = `token=${accessToken}; path=/; max-age=${60 * 30}`;
-
+        localStorage.setItem("token", accessToken); // Store token in localStorage
         setError("Logged In Successfully");
-
-        // Redirect to the login page
         navigate("/courses");
+        window.location.reload();
       } else {
         setError("Can't login now");
       }
@@ -60,7 +66,8 @@ const Login = () => {
 
   return (
     <div>
-      <div className="container-fluid">
+    <Navbar/>
+      <div className="container-fluid" style={{marginBottom: "15px"}}>
         <div className="row">
           <div className="col-lg-6">
             <div className="sign-up-bg m-3 py-4 text-center">
@@ -130,7 +137,7 @@ const Login = () => {
                     {error && <span style={{ color: "red" }}>{error}</span>}
                   </h5>
                   <h5>
-                    Already have an account?
+                    Already have an account? <br />
                     <NavLink to="/SignUp">Sign Up</NavLink>
                   </h5>
                 </div>
@@ -139,6 +146,7 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

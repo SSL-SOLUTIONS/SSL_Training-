@@ -17,7 +17,7 @@ function TestRabbit() {
             <a href="" className="text-decoration-none font-italic text-muted">
               Learn More
             </a>{" "}
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
           <div className="container text-center test-img-1">
             <img src="/test-1.jpg" className="w-75"></img>
@@ -32,7 +32,7 @@ function TestRabbit() {
             <a href="" className="text-decoration-none font-italic text-muted">
               Learn More
             </a>{" "}
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
             <div className="container text-center test-img-1">
               <img src="/screen_2.jpg" className="w-75"></img>
             </div>
@@ -47,7 +47,7 @@ function TestRabbit() {
             <a href="" className="text-decoration-none font-italic text-muted">
               Learn More
             </a>{" "}
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
           <div className="container text-center test-img-1">
             <img src="/screen3.jpg" className="w-75"></img>
@@ -62,7 +62,7 @@ function TestRabbit() {
             <a href="" className="text-decoration-none font-italic text-muted">
               Learn More
             </a>{" "}
-            <i class="fa-solid fa-arrow-right"></i>
+            <i className="fa-solid fa-arrow-right"></i>
           </div>
           <div className="text-center test-img-1">
             <img src="/screen4.jpg" className="w-75"></img>

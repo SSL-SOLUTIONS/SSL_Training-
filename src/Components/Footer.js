@@ -40,7 +40,7 @@ function Footer() {
                 <div className="d-flex mb-5 align-items-center">
                   <input type="text" placeholder="Your Email" />
                   <div className="send-btn">
-                    <i class="fa-solid fa-arrow-right py-2"></i>
+                    <i className="fa-solid fa-arrow-right py-2"></i>
                   </div>
                 </div>
               </div>
@@ -48,28 +48,28 @@ function Footer() {
           </div>
         </div>
         <hr />
-        <div class="container">
-          <div class="row mt-5">
+        <div className="container">
+          <div className="row mt-5">
             <div className="col-lg-4">
-              <ul class="social-network social-circle">
-                {/* <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li> */}
+              <ul className="social-network social-circle">
+                {/* <li><a href="#" className="icoRss" title="Rss"><i className="fa fa-rss"></i></a></li> */}
                 <li>
                   <a
                     href="https://www.facebook.com/sslsolution.net"
-                    class="icoFacebook"
+                    className="icoFacebook"
                     title="Facebook"
                   >
-                    <i class="fa-brands fa-facebook-f"></i>
+                    <i className="fa-brands fa-facebook-f"></i>
                   </a>
                 </li>
-                {/* <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li> */}
+                {/* <li><a href="#" className="icoGoogle" title="Google +"><i className="fa fa-google-plus"></i></a></li> */}
                 <li>
                   <a
                     href="https://www.linkedin.com/in/ssl-solutions-72374621b/?originalSubdomain=pk"
-                    class="icoLinkedin"
+                    className="icoLinkedin"
                     title="Linkedin"
                   >
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>
               </ul>

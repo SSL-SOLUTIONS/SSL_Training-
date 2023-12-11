@@ -15,7 +15,7 @@ function Contact() {
             <div className="col-lg-12 contact-bg">
               <div className="container contact-content">
                 <div className="d-flex mt-2">
-                  <i class="fa-solid fa-phone mt-1"></i>
+                  <i className="fa-solid fa-phone mt-1"></i>
                   <h4 className="ml-4">
                     <strong>Phone</strong>
                   </h4>
@@ -27,7 +27,7 @@ function Contact() {
             <div className="col-lg-12 mt-3 contact-bg">
               <div className="container contact-content">
                 <div className="d-flex mt-2">
-                  <i class="fa-solid fa-location-dot mt-1"></i>
+                  <i className="fa-solid fa-location-dot mt-1"></i>
                   <h4 className="ml-4">
                     <strong>Address</strong>
                   </h4>
@@ -41,7 +41,7 @@ function Contact() {
             <div className="col-lg-12 mt-3 contact-bg">
               <div className="container contact-content">
                 <div className="d-flex mt-2">
-                  <i class="fa-solid fa-envelope mt-1"></i>
+                  <i className="fa-solid fa-envelope mt-1"></i>
                   <h4 className="ml-4">
                     <strong>Email</strong>
                   </h4>
@@ -53,7 +53,7 @@ function Contact() {
             <div className="col-lg-12 mb-5 mt-3 contact-bg">
               <div className="container contact-content">
                 <div className="d-flex mt-2">
-                  <i class="fa-solid fa-user mt-1"></i>
+                  <i className="fa-solid fa-user mt-1"></i>
                   <h4 className="ml-4">
                     <strong>Managed By</strong>
                   </h4>

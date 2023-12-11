@@ -193,10 +193,10 @@ function Pricing() {
 
       <div className="container">
         <div id="accordion">
-          <div class="card">
-            <div class="card-header" id="headingOne">
-              <h5 class="mb-0">
-                <button class="btn btn-link text-decoration-none my-color">
+          <div className="card">
+            <div className="card-header" id="headingOne">
+              <h5 className="mb-0">
+                <button className="btn btn-link text-decoration-none my-color">
                   What type of candidates does SSL Training target?
                 </button>
                 <i
@@ -211,11 +211,11 @@ function Pricing() {
 
             <div
               id="collapseOne"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingOne"
               data-parent="#accordion"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life
                 accusamus terry richardson ad squid. 3 wolf moon officia aute,
                 non cupidatat skateboard dolor brunch. Food truck quinoa
@@ -229,10 +229,10 @@ function Pricing() {
               </div>
             </div>
           </div>
-          <div class="card">
-            <div class="card-header" id="headingTwo">
-              <h5 class="mb-0">
-                <button class="btn btn-link text-decoration-none collapsed my-color">
+          <div className="card">
+            <div className="card-header" id="headingTwo">
+              <h5 className="mb-0">
+                <button className="btn btn-link text-decoration-none collapsed my-color">
                   How can SSL Training help me find the best talent for my
                   company?{" "}
                 </button>
@@ -247,11 +247,11 @@ function Pricing() {
             </div>
             <div
               id="collapseTwo"
-              class="collapse"
+              className="collapse"
               aria-labelledby="headingTwo"
               data-parent="#accordion"
             >
-              <div class="card-body">
+              <div className="card-body">
                 Anim pariatur cliche reprehenderit, enim eiusmod high life
                 accusamus terry richardson ad squid. 3 wolf moon officia aute,
                 non cupidatat skateboard dolor brunch. Food truck quinoa

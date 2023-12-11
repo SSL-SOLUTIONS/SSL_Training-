@@ -2,8 +2,10 @@
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
 
-async function authenticateToken(req, res, next) {
-  const token = req.headers["authorization"];
+const authenticateToken = (req, res, next) => {
+  // Extract the token from the request headers
+  const token =
+    req.headers.authorization && req.headers.authorization.split(" ")[1];
 
   if (!token) {
     return res
@@ -11,30 +13,30 @@ async function authenticateToken(req, res, next) {
       .json({ message: "Unauthorized: Token not provided" });
   }
 
-  // Verify the token asynchronously
-  const verifyTokenAsync = promisify(jwt.verify);
-
-  try {
-    const decoded = await verifyTokenAsync(
-      token,
-      process.env.ACCESS_TOKEN_SECRET
-    );
-    req.user = decoded;
-    next();
-  } catch (err) {
-    return res.status(403).json({ message: "Forbidden: Invalid token" });
-  }
-}
-
-function authorizeRoles(roles) {
-  return (req, res, next) => {
-    if (roles.includes(req.user.role)) {
-      next();
-    } else {
-      res.status(403).json({ message: "Forbidden: Insufficient permissions" });
+  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
+    if (err) {
+      console.error("Token verification failed:", err);
+      return res.status(403).json({ message: "Forbidden: Invalid token" });
     }
+
+    req.user = user;
+    console.log("User authenticated:", user);
+    next();
+  });
+};
+const authorizeRoles = (roles) => {
+  return (req, res, next) => {
+    console.log("User role:", req.user.role);
+    if (!roles.includes(req.user.role)) {
+      console.error("Forbidden: Insufficient role permissions");
+      return res
+        .status(403)
+        .json({ message: "Forbidden: Insufficient role permissions" });
+    }
+
+    next();
   };
-}
+};
 
 function extractUserFromToken(req, res, next) {
   const token = req.cookies.token;
@@ -67,9 +69,8 @@ function generateTokens(user) {
     { expiresIn: "7d" }
   );
 
-  return { accessToken, refreshToken }; // Make sure to return the tokens
+  return { accessToken, refreshToken };
 }
-
 module.exports = {
   authenticateToken,
   authorizeRoles,

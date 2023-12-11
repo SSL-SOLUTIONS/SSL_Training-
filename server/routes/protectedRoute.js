@@ -4,7 +4,7 @@ const {
   authenticateToken,
   authorizeRoles,
   extractUserFromToken,
-} = require("../middleware/auth");
+} = require("../middleware/middlewareAuth");
 
 // Middleware to check for a valid session and user role
 const checkSessionAndRole = (req, res, next) => {
@@ -42,7 +42,7 @@ router.get(
 
 // Admin route example
 router.get(
-  "/pannel",
+  "/admin",
   authenticateToken,
   extractUserFromToken,
   authorizeRoles(["admin"]),
