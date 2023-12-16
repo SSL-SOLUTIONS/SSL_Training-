@@ -1,7 +1,7 @@
-const { DataTypes, Model } = require('sequelize');
-const sequelize = require('../config/config');
+const { DataTypes, Model } = require("sequelize");
+const sequelize = require("../config/config");
 
-class User extends Model { }
+class User extends Model {}
 
 User.init(
   {
@@ -41,6 +41,14 @@ User.init(
       type: DataTypes.ENUM("user", "admin"),
       allowNull: false,
       defaultValue: "user",
+    },
+    about: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    profilePicture: {
+      type: DataTypes.TEXT("long"),
+      allowNull: true,
     },
   },
   {

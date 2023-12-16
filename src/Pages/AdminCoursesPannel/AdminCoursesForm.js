@@ -1,4 +1,3 @@
-// AdminCoursesForm.js
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
@@ -16,6 +15,9 @@ const AdminCoursesForm = ({ onAddCourse }) => {
     scope: "",
     benefits: "",
     videoUrl: "",
+    instructorName: "",
+    instructorImage: null,
+    instructorDescription: "",
   });
 
   const handleChange = (e) => {
@@ -25,9 +27,10 @@ const AdminCoursesForm = ({ onAddCourse }) => {
     if (type === "file") {
       setCourse((prevCourse) => ({
         ...prevCourse,
-        [name]: e.target.files[0], // Use the first file for simplicity
+        [name]: e.target.files[0], // Set the file itself
       }));
     } else {
+      // Handle other input types
       setCourse((prevCourse) => ({
         ...prevCourse,
         [name]: value,
@@ -35,7 +38,7 @@ const AdminCoursesForm = ({ onAddCourse }) => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // Validate the form data before adding the course
     if (
@@ -49,49 +52,60 @@ const AdminCoursesForm = ({ onAddCourse }) => {
       !course.skillLevel ||
       !course.benefits ||
       !course.objectives ||
-      !course.videoUrl
+      !course.videoUrl ||
+      !course.instructorImage ||
+      !course.instructorDescription ||
+      !course.instructorImage
     ) {
       alert("Please fill in all fields");
       return;
     }
 
-    // Create FormData to handle file upload
     const formData = new FormData();
-    formData.append("title", course.title);
-    formData.append("image", course.image);
-    formData.append("description", course.description);
-    formData.append("price", course.price);
-    formData.append("category", course.category);
-    formData.append("duration", course.duration);
-    formData.append("videoUrl", course.videoUrl);
-    formData.append("benefits", course.benefits);
-    formData.append("objectives", course.objectives);
-    formData.append("scope", course.scope);
-    formData.append("skillLevel", course.skillLevel);
-
-    // Pass the new course to the parent component
-    onAddCourse(formData);
-
-    // Reset the form
-    setCourse({
-      title: "",
-      image: null,
-      description: "",
-      price: "",
-      category: "",
-      duration: "",
-      skillLevel: "",
-      objectives: "",
-      scope: "",
-      benefits: "",
-      videoUrl: "",
+    Object.entries(course).forEach(([key, value]) => {
+      formData.append(key, value);
     });
+
+    try {
+      // Pass the new course to the parent component
+      const response = await fetch("http://localhost:8080/courses", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      alert("Course added succesfully");
+
+      // Reset the form if needed
+      setCourse({
+        title: "",
+        image: null,
+        description: "",
+        price: "",
+        category: "",
+        duration: "",
+        skillLevel: "",
+        objectives: "",
+        scope: "",
+        benefits: "",
+        videoUrl: "",
+        instructorName: "",
+        instructorImage: null,
+        instructorDescription: "",
+      });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+    }
   };
 
   return (
     <div className="container mb-5 mt-5">
       <h2>Add New Course</h2>
-      <Form onSubmit={handleSubmit} style={{margin: "0px"}}>
+      <Form
+        onSubmit={handleSubmit}
+        encType="multipart/form-data"
+        style={{ margin: "0px" }}
+      >
         <Form.Group className="mb-3" controlId="formBasicTitle">
           <Form.Label className="fw-bolder">Title:</Form.Label>
           <Form.Control
@@ -204,6 +218,42 @@ const AdminCoursesForm = ({ onAddCourse }) => {
             value={course.videoUrl}
           />
         </Form.Group>
+        <h1 className="text-center">Course Instructor Details:</h1>
+        <Form.Group className="mb-3" controlId="formBasicInstructorName">
+          <Form.Label className="fw-bolder">Instructor's Name:</Form.Label>
+          <Form.Control
+            className="border-success"
+            type="text"
+            name="instructorName"
+            onChange={handleChange}
+            value={course.instructorName}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicinstructorDescription">
+          <Form.Label className="fw-bolder">
+            Instructor's Description:
+          </Form.Label>
+          <Form.Control
+            className="border-success"
+            type="text"
+            name="instructorDescription"
+            onChange={handleChange}
+            value={course.instructorDescription}
+          />
+        </Form.Group>
+
+        <Form.Group className="mb-3" controlId="formBasicinstructorImage">
+          <Form.Label className="fw-bolder">
+            Upload instructor Image:
+          </Form.Label>
+          <Form.Control
+            type="file"
+            name="instructorImage"
+            className="border-success"
+            onChange={handleChange}
+          />
+        </Form.Group>
+
         <Button
           style={{
             backgroundColor: "rgb(18, 135, 111)",

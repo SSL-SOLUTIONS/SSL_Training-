@@ -12,8 +12,8 @@ function InformationCollection() {
       <div className="container-fluid pb-5 bg-light">
         <div className="container">
           <div className="pt-5 policy-text text-center">
-            <h1 className="black pt-5 font-privacy">PRIVACY POLICY</h1>
-            <h4 className="mb-5">Last updated: 01 December, 2023</h4>
+            <h1 className="black pt-5">PRIVACY POLICY</h1>
+            <h5 className="mb-5">Last updated: 01 December, 2023</h5>
           </div>
         </div>
       </div>

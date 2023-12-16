@@ -1,6 +1,7 @@
 import React from "react";
 import "../Bottom_Section/css/payment.css";
 import Still from "./Still";
+import { Link } from "react-router-dom";
 
 function Payment() {
   return (
@@ -127,9 +128,12 @@ function Payment() {
                     <li>Screen and Interview</li>
                     <hr />
                     <li className="mb-4">
-                      <button className="btn btn-outline-primary w-50 py-2">
-                        Contact Us
-                      </button>
+                      <Link to="/contact">
+                        {" "}
+                        <button className="btn btn-outline-primary w-50 py-2">
+                          Contact Us
+                        </button>
+                      </Link>
                     </li>
                   </div>
                 </div>

@@ -49,6 +49,18 @@ Course.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    instructorDescription: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
+    instructorName: {
+      type: DataTypes.TEXT,
+      allowNull: false,
+    },
+    instructorImage: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
   },
   {
     sequelize,

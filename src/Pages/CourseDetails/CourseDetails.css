@@ -18,7 +18,7 @@
   width: 30vw;
 }
 .hero-text > span {
-    display: inline-block;
+  display: inline-block;
   margin-right: 0.5rem;
   text-align: center;
 }
@@ -38,10 +38,24 @@
   font-size: larger;
 }
 
-.course-details-section {
-  width: 80vw;
+.course-details-section,
+.top-companies,
+.additional-courses-section,
+.course-instructor-cont {
+  width: 70vw;
   border: 1px solid #dfdede;
-  margin: 2rem auto;
+  margin: 2rem 3rem;
+}
+
+.course-instructor-cont {
+  display: flex;
+  justify-content: start;
+  padding: 2rem;
+}
+.additional-courses-section > h3 {
+  background-color: #f1eded;
+  text-align: center;
+  height: 2.5rem;
 }
 .course-details-section > h1 {
   margin: 0 1rem;
@@ -65,6 +79,46 @@
   color: rgb(14 48 41);
 }
 
+.additional-courses-list {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 1rem 0;
+}
+.course-more {
+  width: 202.4px;
+  border: 1px solid rgb(181, 179, 179);
+  border-radius: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  cursor: pointer;
+}
+.more-course-txt {
+  padding: 0.25rem;
+}
+
+.img > .image-img {
+  width: 200px;
+}
+.inst-img {
+  width: 125px;
+  text-align: center;
+}
+.inst-img > h4 {
+  width: max-content;
+}
+.inst-img > img {
+  height: 12vh;
+  border: 2px solid gray;
+  border-radius: 50%;
+  padding: 2px;
+  margin-bottom: 0.5rem;
+}
+.inst-txt {
+  margin-left: 2rem;
+}
+
 @media screen and (max-width: 990px) {
   .course-hero-section {
     display: flex;
@@ -76,15 +130,38 @@
     width: 100%;
     padding: 1rem 3rem;
   }
-  .hero-right{
+  .hero-right {
     margin-top: 2rem;
   }
-  .hero-right > iframe{
+  .hero-right > iframe {
     width: auto;
     height: auto;
   }
-.hero-btn{
+  .hero-btn {
     align-self: center;
-}
+  }
+  .swiper-wrapperr {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .slide-image > img {
+    height: 7vh;
+  }
+  .swiper-slide {
+    text-align: center;
+    width: -webkit-fill-available;
+  }
+
+  .course-instructor-cont {
+    display: flex;
+    flex-direction: column;
+  }
+  .inst-img {
+    width: auto;
+  }
+  .inst-img > h4 {
+    text-align: center;
+    width: -webkit-fill-available;
+  }
 }

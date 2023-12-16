@@ -5,25 +5,31 @@
     z-index: 1;
     margin-top: -50px;
 */
-a{
+a {
   text-decoration: none;
 }
 .my-btn {
-  padding: 12px;
+  margin-left: 1rem;
+
+  padding: 12px 0;
   background-color: rgb(18, 135, 111);
   outline: 1px solid rgb(18, 135, 111);
   border: none;
   color: white;
   font-weight: 700;
   border-radius: 5px;
-  width: 180px;
+  width: 100px;
   transition: 0.7s;
+}
+.logout-icon {
+  margin: 0 !important;
+  display: flex;
+  align-items: center;
 }
 
 .my-btn:hover {
   background-color: #e7f8f1;
-}
-.my-btn > a:hover {
+  color: black;
   color: black !important;
   font-weight: 500 !important;
 }
@@ -47,12 +53,10 @@ a{
   font-weight: 600;
 }
 
-
-.categories > label{
-      display: inline-block;
-    font-weight: 600;
-    font-size: 0.85rem;
-
+.categories > label {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.85rem;
 }
 .category-list {
   align-self: center;
@@ -74,23 +78,51 @@ a{
   cursor: pointer;
   transition: 0.6s;
 }
-.nav-item > button a{
-    color: white !important;
-    font-weight: 300 !important;
+.nav-item > button a {
+  color: white !important;
+  font-weight: 300 !important;
 }
-.nav-item select > option{
-    cursor: pointer;
+.nav-item select > option {
+  cursor: pointer;
 }
-.div-categ-back{
+.div-categ-back {
   padding: 0;
-    margin-top: -9px;
-    height: 1vh;
+  margin-top: -9px;
+  height: 1vh;
 }
 
-.my-btn > a{
+.my-btn > a {
   text-decoration: none;
 }
 
-.list-group > a{
+.list-group > a {
   min-width: 15vw;
+}
+
+.list-group {
+  margin: -1rem;
+}
+
+.profile-icon {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+
+@media screen and (max-width: 990px){
+ 
+  .list-group > a {
+  min-width: 22vw;
+}
+.navbar-nav{
+  text-align: center;
+}
+.logout-icon{
+  display: flex;
+  flex-direction: column;
+}
+.profile-icon{
+  margin-top: 1rem;
+  text-align: center;
+}
 }

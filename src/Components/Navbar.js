@@ -12,6 +12,7 @@ import {
   MDBListGroup,
   MDBListGroupItem,
   MDBRow,
+  MDBIcon,
 } from "mdb-react-ui-kit";
 import { useAuth } from "../AuthContext/AuthContext";
 
@@ -55,8 +56,8 @@ const Navbar = () => {
             <ul className="navbar-nav ml-auto">
               {user?.role === "admin" && (
                 <li className="nav-item mt-1">
-                  <NavLink className="nav-link mx-2 mt-2" to="/admin-panel">
-                    Pannel
+                  <NavLink className="nav-link mx-2 mt-2" to="/adminpanel">
+                    Admin Panel
                   </NavLink>
                 </li>
               )}
@@ -74,7 +75,7 @@ const Navbar = () => {
                             tag="a"
                             className="nav-link"
                           >
-                            Categories
+                            Courses
                           </MDBDropdownToggle>
                           <MDBDropdownMenu
                             className="mt-0  justify-content-center"
@@ -167,15 +168,25 @@ const Navbar = () => {
                   Contact Us
                 </NavLink>
               </li>
-              <li className="nav-item mt-2 ml-4">
-                {token ? (
-                  <button className="my-btn" onClick={handleLogout}>
-                    Logout
-                  </button>
+              <li className="logout-icon nav-item mt-2 ml-4">
+                {token && user ? (
+                  <>
+                    <button className="my-btn" onClick={handleLogout}>
+                      Logout
+                    </button>
+                    <Link to="/user-profile">
+                      <MDBIcon
+                        className="profile-icon"
+                        fas
+                        icon="user-circle"
+                      />{" "}
+                    </Link>
+                  </>
                 ) : (
-                  <button className="my-btn">
-                    <NavLink to="/login">Login</NavLink>
-                  </button>
+                  <NavLink to="/login">
+                    {" "}
+                    <button className="my-btn">Login</button>
+                  </NavLink>
                 )}
               </li>
             </ul>

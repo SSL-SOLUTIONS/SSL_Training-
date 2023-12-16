@@ -10,7 +10,7 @@ function Contact() {
       <div className="container">
         <div className="row mt-5 pt-5">
           <div className="col-lg-6">
-            <h1 className="black font-privacy ">Contact Us</h1>
+            <h1>Contact Us</h1>
 
             <div className="col-lg-12 contact-bg">
               <div className="container contact-content">
@@ -69,11 +69,11 @@ function Contact() {
         </div>
       </div>
       <div className="container pt-5 mt-5 text-center">
-        <h1 className="font-privacy black">We’d love to hear from You</h1>
-        <h3>
+        <h1>We’d love to hear from You</h1>
+        <h4>
           content of a page when looking at its layout. It is a long established
           fact that a reader will be distracted by the readable
-        </h3>
+        </h4>
         <img src="/contact-banner-1.png" className="w-100" />
       </div>
 

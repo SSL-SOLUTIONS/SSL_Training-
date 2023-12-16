@@ -3,6 +3,7 @@ import "../Bottom_Section/css/carousel.css";
 import Carousel from "../Bottom_Section/Carousel";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 function Swift_Hiring() {
   return (
@@ -28,9 +29,12 @@ function Swift_Hiring() {
               </button>
             </div>
             <div className="col-lg-6 demo-btn_2">
-              <button className="m-auto btn_2 py-2 rounded">
-                Start a free Trail
-              </button>
+              <Link to="/quiz">
+                {" "}
+                <button style={{fontWeight: "700"}} className="m-auto btn_2 py-2 rounded">
+                  Start trial Quiz
+                </button>{" "}
+              </Link>
             </div>
           </div>
         </div>

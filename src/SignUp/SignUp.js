@@ -110,10 +110,8 @@ const SignUp = () => {
 
    const handleSignUp = async (e) => {
      e.preventDefault();
-     console.log("Start of handleSignUp");
 
      const newErrors = validateForm();
-       console.log("Validation Errors:", newErrors);
      setErrors(newErrors);
 
      if (Object.keys(newErrors).length > 0) {
@@ -132,8 +130,6 @@ const SignUp = () => {
      formDataToSubmit.append("filename", formData.filename);
 
      try {
-       console.log("Before Axios.post");
-       console.log("Form Data to Submit:", formDataToSubmit);
        const response = await Axios.post(
          "http://localhost:8080/auth/signup",
          formDataToSubmit,
@@ -143,9 +139,6 @@ const SignUp = () => {
            },
          }
        );
-       console.log("After Axios.post");
-       console.log("Server Response:", response);
-
        const { token, refreshToken, message, field } = response.data;
 
        if (token) {

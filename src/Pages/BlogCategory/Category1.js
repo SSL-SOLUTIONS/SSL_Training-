@@ -11,12 +11,12 @@ function Category1() {
       <Navbar />
       <div className="containerr-fluid pt-5 contact-bg">
         <div className="container mb-5 pb-5 text-center">
-          <h1 className="black pt-5 font-privacy">Coding Interview Platform</h1>
-          <h3 className="blog-para">
+          <h1 className="black pt-5">Coding Interview Platform</h1>
+          <h6 className="blog-para">
             Join our talent network of the world’s best talent to experience
             full-time, long-term remote work with effective compensation and
             career growth opportunities.
-          </h3>
+          </h6>
           <div className="blog-search justify-content-center mt-3 d-flex">
             <input type="text" placeholder="Search by Title"></input>
             <select className="blog-search">

@@ -1,0 +1,24 @@
+.pannel-link-wrapper {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pannel-links-btn {
+  padding: 1.5rem 2rem;
+  border: 1px solid rgb(18, 135, 111);
+  color: white;
+  transition: 0.2s;
+  border-radius: 0.75rem;
+  background-color: rgb(18, 135, 111);
+  font-weight: 500;
+  margin: 0 1rem;
+  margin-top: 1rem;
+}
+
+.pannel-links-btn:hover {
+  color: rgb(18, 135, 111);
+  background-color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}

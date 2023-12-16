@@ -1,8 +1,7 @@
-// middleware/authMiddleware.js
 const { promisify } = require("util");
 const jwt = require("jsonwebtoken");
 
-const authenticateToken = (req, res, next) => {
+const authenticateToken = async (req, res, next) => {
   // Extract the token from the request headers
   const token =
     req.headers.authorization && req.headers.authorization.split(" ")[1];
@@ -13,17 +12,22 @@ const authenticateToken = (req, res, next) => {
       .json({ message: "Unauthorized: Token not provided" });
   }
 
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-    if (err) {
-      console.error("Token verification failed:", err);
-      return res.status(403).json({ message: "Forbidden: Invalid token" });
-    }
+  const verifyToken = promisify(jwt.verify);
 
+  try {
+    const user = await verifyToken(token, process.env.ACCESS_TOKEN_SECRET);
     req.user = user;
     console.log("User authenticated:", user);
     next();
-  });
+  } catch (error) {
+    console.error("Token verification failed:", error);
+    if (error.name === "TokenExpiredError") {
+      return res.status(403).json({ message: "Forbidden: Token expired" });
+    }
+    return res.status(403).json({ message: "Forbidden: Invalid token" });
+  }
 };
+
 const authorizeRoles = (roles) => {
   return (req, res, next) => {
     console.log("User role:", req.user.role);
@@ -38,7 +42,7 @@ const authorizeRoles = (roles) => {
   };
 };
 
-function extractUserFromToken(req, res, next) {
+const extractUserFromToken = async (req, res, next) => {
   const token = req.cookies.token;
 
   if (!token) {
@@ -47,21 +51,23 @@ function extractUserFromToken(req, res, next) {
       .json({ message: "Unauthorized: Token not provided" });
   }
 
-  jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, user) => {
-    if (err) {
-      return res.status(403).json({ message: "Forbidden: Invalid token" });
-    }
+  const verifyToken = promisify(jwt.verify);
 
+  try {
+    const user = await verifyToken(token, process.env.ACCESS_TOKEN_SECRET);
     req.user = user;
     next();
-  });
-}
+  } catch (error) {
+    console.error("Token verification failed:", error);
+    return res.status(403).json({ message: "Forbidden: Invalid token" });
+  }
+};
 
 function generateTokens(user) {
   const accessToken = jwt.sign(
     { id: user.id, email: user.email, role: user.role },
     process.env.ACCESS_TOKEN_SECRET,
-    { expiresIn: "1h" }
+    { expiresIn: "24h" }
   );
   const refreshToken = jwt.sign(
     { id: user.id, email: user.email, role: user.role },
@@ -71,6 +77,7 @@ function generateTokens(user) {
 
   return { accessToken, refreshToken };
 }
+
 module.exports = {
   authenticateToken,
   authorizeRoles,
