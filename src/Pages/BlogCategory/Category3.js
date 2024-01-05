@@ -89,7 +89,7 @@ function Category3() {
                 </p>
                 <hr></hr>
                 <p>
-                  SSL Solutions makes the remote hiring process easy and
+                  SSL Trainings makes the learning process easy and
                   rewarding for both companies and developers. Business owners,
                   startups and enterprises can hire pre-vetted US-based remote
                   tech talent across 100+ skills in…
@@ -114,7 +114,7 @@ function Category3() {
                 </p>
                 <hr></hr>
                 <p>
-                  SSL Solutions makes the remote hiring process easy and
+                  SSL Trainings makes the learning process easy and
                   rewarding for both companies and developers. Business owners,
                   startups and enterprises can hire pre-vetted US-based remote
                   tech talent across 100+ skills in…

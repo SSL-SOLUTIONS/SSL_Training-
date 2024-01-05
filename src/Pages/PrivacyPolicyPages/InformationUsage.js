@@ -82,68 +82,82 @@ function InformationUsage() {
       <div className="container pt-5 mt-5 policy">
         <h1 className=" black">Privacy Policy</h1>
         <p className="my-text">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using ‘Content here, content here’, making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for ‘lorem ipsum’ will uncover many web sites still in their
-          infancy.
+          Thank you for joining SSL Training. We at SSL Training (“SSL
+          Training”, “we”, “us”) respect your privacy and want you to understand
+          how we collect, use, and share data about you. This Privacy Policy
+          covers our data collection practices and describes your rights
+          regarding your personal data. Unless we link to a different policy or
+          state otherwise, this Privacy Policy applies when you visit or use SSL
+          Training websites, mobile applications, APIs, or related services (the
+          “Services”). It also applies to prospective customers of our business
+          and enterprise products. By using the Services, you agree to the terms
+          of this Privacy Policy. You shouldn’t use the Services if you don’t
+          agree with this Privacy Policy or any other agreement that governs
+          your use of the Services.
         </p>
 
         <h1 className=" black">Information Collection</h1>
         <p className="my-text">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using ‘Content here, content here’, making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for ‘lorem ipsum’ will uncover many web sites still in their
-          infancy.
+          We collect certain data from you directly, like information you enter
+          yourself, data about your consumption of content, and data from
+          third-party platforms you connect with SSL Training. We also collect
+          some data automatically, like information about your device and what
+          parts of our Services you interact with or spend time using. All data
+          listed in this section is subject to the following processing
+          activities: collecting, recording, structuring, storing, altering,
+          retrieving, encrypting, pseudonymizing, erasing, combining, and
+          transmitting.
         </p>
         <p className="my-text">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using ‘Content here, content here’, making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for ‘lorem ipsum’ will uncover many web sites still in their
-          infancy.
+          We may collect different data from or about you depending on how you
+          use the Services. Below are some examples to help you better
+          understand the data we collect. When you create an account and use the
+          Services, including through a third-party platform, we collect any
+          data you provide directly
         </p>
         <h1 className=" black">Non-Identifiable or Aggregated Data</h1>
         <p className="my-text">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using ‘Content here, content here’, making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for ‘lorem ipsum’ will uncover many web sites still in their
-          infancy.
+          When you access content, we collect certain data including which
+          courses, assignments, labs, workspaces, and quizzes you’ve started and
+          completed; content and subscription purchases and credits;
+          subscriptions; completion certificates; your exchanges with
+          instructors, teaching assistants, and other students; and essays,
+          answers to questions, and other items submitted to satisfy course and
+          related content requirements.
         </p>
         <p className="my-text">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using ‘Content here, content here’, making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for ‘lorem ipsum’ will uncover many web sites still in their
-          infancy.
+          We use your data to do things like provide our Services, communicate
+          with you, troubleshoot issues, secure against fraud and abuse, improve
+          and update our Services, analyze how people use our Services, serve
+          personalized advertising, and as required by law or necessary for
+          safety and integrity. We retain your data for as long as it is needed
+          to serve the purposes for which it was collected.
         </p>
         <br />
-        <h2 className="black">Contacting SSL Solution</h2>
+        <h2 className="black">Contact SSL Trainings</h2>
         <p className="my-text">
-          Address: Office # 303, 3rd Floor, Landmark Plaza, Jail road, Lahore.{" "}
+          <a
+            href="https://www.google.com/maps/place/SSL+SOLUTIONS/@31.5349517,74.3462811,19z/data=!3m1!4b1!4m6!3m5!1s0x391905d3e3ae6b77:0x157a2f53f97b67c6!8m2!3d31.5349506!4d74.3469248!16s%2Fg%2F11lpw1_rd4?entry=ttu"
+            target="_blank"
+            className="info-hover"
+          >
+            {" "}
+            Office 303, 3rd Floor, Landmark Plaza Jail Road, Lahore
+          </a>{" "}
+          <br></br>
+          <span></span>
         </p>
         <p className="my-text">
-          Telephone: <span className="info-hover">+92-311-4767758</span>{" "}
-          <br></br>{" "}
+          Telephone:{" "}
+          <a href="tel:+923114767758" className="info-hover">
+            +92-311-4767758
+          </a>
+          <br /> <br />
           <span>
-            Email: <span className="info-hover">support@sslsoltution.com</span>
+            Email:{" "}
+            <a href="mailto:contact@ssltraining.com" className="info-hover">
+              contact@ssltraining.com
+            </a>
           </span>
         </p>
         <br></br>

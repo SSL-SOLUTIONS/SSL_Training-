@@ -26,9 +26,25 @@
 .footer-number{
     margin-top: 70px;   
 }
+.footer-number > li{
+	list-style: none;
+	margin-top: 10px;
+
+}
+.footer-number > li:hover,.footer-number-1 > h5 > a:hover{
+	font-weight: 700;
+}
+.footer-number > li > a,.footer-number-1 > h5 > a{
+	text-decoration: none;
+	color: white;
+}
 .footer-number-1{
     margin-top: 30px;
 }
+.footer-number-1 > h5{
+	margin-bottom: 10px !important;
+}
+
 
 .send-btn i{
     padding: 10px;

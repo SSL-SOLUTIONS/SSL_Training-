@@ -1,5 +1,6 @@
 import React from "react";
 import "../Components/css/footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -12,24 +13,38 @@ function Footer() {
                 <img className="mt-2" src="/logo-white.png"></img>
               </div>
               <div className="footer-number-1">
-                <h5>+92-311-4767758</h5>
-                <h5>contact@ssltraining.com</h5>
+                <h5>
+                  <a href="tel:+923114767758">+92-311-4767758</a>
+                </h5>
+                <h5>
+                  <a href="mailto:contact@ssltraining.com">
+                    contact@ssltraining.com
+                  </a>
+                </h5>
               </div>
             </div>
 
             <div className="mt-5 col-lg-3 col-md-6">
               <div className="footer-number">
                 <h5>Information</h5>
-                <li>Quick Links</li>
-                <li>Product</li>
+                <li>
+                  <Link to="/about">About</Link>
+                </li>
+                <li>
+                  <Link to="/courses">Products</Link>
+                </li>
               </div>
             </div>
 
             <div className="mt-5 col-lg-3 col-md-6">
               <div className="footer-number">
                 <h5 className="invisible">Information</h5>
-                <li>Company</li>
-                <li>Lift Media</li>
+                <li>
+                  <Link to="privacy">Privacy Policy</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact Us</Link>
+                </li>
               </div>
             </div>
 
@@ -58,6 +73,7 @@ function Footer() {
                     href="https://www.facebook.com/sslsolution.net"
                     className="icoFacebook"
                     title="Facebook"
+                    target="_blank"
                   >
                     <i className="fa-brands fa-facebook-f"></i>
                   </a>
@@ -68,6 +84,7 @@ function Footer() {
                     href="https://www.linkedin.com/in/ssl-solutions-72374621b/?originalSubdomain=pk"
                     className="icoLinkedin"
                     title="Linkedin"
+                    target="_blank"
                   >
                     <i className="fa-brands fa-linkedin-in"></i>
                   </a>

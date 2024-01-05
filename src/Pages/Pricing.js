@@ -4,6 +4,7 @@ import RightSolution from "../Components/RightSolution";
 import CarouselCard from "../Components/CarouselCard";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 function Pricing() {
   return (
@@ -75,9 +76,12 @@ function Pricing() {
                       <li>Screen and Interview</li>
                       <hr />
                       <li className="mb-4">
-                        <button className="btn btn-outline-primary py-2 w-50">
-                          Buy Now
-                        </button>
+                        <Link to="/request-demo">
+                          {" "}
+                          <button className="btn btn-outline-primary py-2 w-50">
+                            Buy Now
+                          </button>
+                        </Link>
                       </li>
                     </div>
                   </div>
@@ -105,9 +109,12 @@ function Pricing() {
                     <li>Screen and Interview</li>
                     <hr />
                     <li className="mb-4">
-                      <button className="btn btn-primary py-2 w-50">
-                        Buy now
-                      </button>
+                      <Link to="/request-demo">
+                        {" "}
+                        <button className="btn btn-primary py-2 w-50">
+                          Buy now
+                        </button>
+                      </Link>
                     </li>
                   </div>
                 </div>
@@ -132,9 +139,12 @@ function Pricing() {
                     <li>Screen and Interview</li>
                     <hr />
                     <li className="mb-4">
-                      <button className="btn btn-outline-primary w-50 py-2">
-                        Contact Us
-                      </button>
+                      <Link to="/contact">
+                        {" "}
+                        <button className="btn btn-outline-primary w-50 py-2">
+                          Contact Us
+                        </button>
+                      </Link>
                     </li>
                   </div>
                 </div>
@@ -149,12 +159,14 @@ function Pricing() {
         <div className="pt-5 container text-center">
           <h1 className=" black">Still Evaluating? Try it out!</h1>
           <p className="evulate-text ">
-            SSL Solutions makes the remote hiring process easy and rewarding for
-            both companies and developers. Business owners, startups and
-            enterprises can hire pre-vetted US-based remote tech talent across
-            100+ skills.
+            SSL Training makes learning process easy and rewarding for both
+            companies and developers. Business owners, startups and enterprises
+            can hire pre-vetted US-based remote tech talent across 100+ skills.
           </p>
-          <button className="pricing-btn mb-5">Start a free Trial</button>
+          <Link to="/quiz">
+            {" "}
+            <button className="pricing-btn mb-5">Start a free Quiz</button>
+          </Link>
         </div>
       </div>
 
@@ -173,8 +185,8 @@ function Pricing() {
         <div className="container pb-5 text-center pt-5">
           <h1 className="black pt-5 ">What Clients Say!</h1>
           <h4>
-            Error voluptate adipisci. Quas a delectus optio ut. Non consequatur
-            voluptatem quia rerum cum similique enim.
+            SSL Training is one of the bestest Platform to upgrade Learning,
+            skills & to build a next-level tech team.
           </h4>
           <CarouselCard />
         </div>
@@ -216,16 +228,9 @@ function Pricing() {
               data-parent="#accordion"
             >
               <div className="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa
-                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+                SSL Trainings target those candidates who are concerned about
+                their career, want to learn new skills or want to explore the IT
+                Sector industry in order to engage with the computerized world.
               </div>
             </div>
           </div>
@@ -233,8 +238,7 @@ function Pricing() {
             <div className="card-header" id="headingTwo">
               <h5 className="mb-0">
                 <button className="btn btn-link text-decoration-none collapsed my-color">
-                  How can SSL Training help me find the best talent for my
-                  company?{" "}
+                  What can I Learn from SSL Trainings?{" "}
                 </button>
                 <i
                   className="fa-solid fa-caret-up caret"
@@ -252,16 +256,11 @@ function Pricing() {
               data-parent="#accordion"
             >
               <div className="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life
-                accusamus terry richardson ad squid. 3 wolf moon officia aute,
-                non cupidatat skateboard dolor brunch. Food truck quinoa
-                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
-                put a bird on it squid single-origin coffee nulla assumenda
-                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-                wes anderson cred nesciunt sapiente ea proident. Ad vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-                farm-to-table, raw denim aesthetic synth nesciunt you probably
-                haven't heard of them accusamus labore sustainable VHS.
+                We don't limit ourselves to a specific set of skills; we're
+                actively recruiting from a pool of over 100 specialized
+                professionals across various domains. These include Python,
+                React/Node, Rails, Angular, Swift, React Native, Android, Java,
+                Golang, PHP, Vue, UI/UX, Design, AI/ML, and many more
               </div>
             </div>
           </div>

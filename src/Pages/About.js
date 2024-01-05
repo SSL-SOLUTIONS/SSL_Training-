@@ -3,6 +3,7 @@ import "../Pages/css/about.css";
 import CountUp from "react-countup";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -13,7 +14,7 @@ function About() {
           <div className="col-lg-5 mt-5 about-main">
             <h1 className="black about-heading">What does SSL Training do?</h1>
             <p>
-              SSL Solutions makes the remote hiring process easy and rewarding
+              SSL Trainings makes the learning process easy and rewarding
               for both companies and developers. Business owners, startups and
               enterprises can hire pre-vetted US-based remote tech talent across
               100+ skills in 24 hours through our channel. We also provide a
@@ -46,10 +47,11 @@ function About() {
                     <img src="https://testrabbit.co/wp-content/uploads/2023/06/array.svg"></img>
                   </div>
                   <div className="card-body py-3">
-                    <h3 className="black">Easy Goal Setting</h3>
+                    <h3 className="black">100+ In-Demand Skills</h3>
                     <p className="">
-                      Quickly and easily set achievable goals with clear
-                      objectives and deadlines.
+                      Endless Possibilities: Work as remote web developers
+                      proficient in Node, Rails, iOS, Android, DevOps, Java,
+                      React, ML, PHP/Laravel, Angular, Python, and more.
                     </p>
                   </div>
                 </div>
@@ -60,10 +62,12 @@ function About() {
                     <img src="https://testrabbit.co/wp-content/uploads/2023/06/array.svg"></img>
                   </div>
                   <div className="card-body py-3">
-                    <h3 className="black">Easy Goal Setting</h3>
+                    <h3 className="black">Accelerate Your Career</h3>
                     <p className="">
-                      Quickly and easily set achievable goals with clear
-                      objectives and deadlines.
+                      Experience rapid growth as you tackle intricate technical
+                      and business challenges utilizing our cutting-edge tech
+                      stack. Your journey to unprecedented professional
+                      development starts here.
                     </p>
                   </div>
                 </div>
@@ -92,19 +96,30 @@ function About() {
           <div className="row text-center">
             <div className="col-lg-3 col-md-6">
               <h1>
-                <CountUp duration={2} className="counter text-light" end={6} />
+                <CountUp
+                  duration={2}
+                  className="counter text-light"
+                  end={100}
+                />
+                +
               </h1>
-              <h5>Happy Clients</h5>
+              <h5>Current Clients</h5>
             </div>
             <div className="col-lg-3 col-md-6">
               <h1>
-                <CountUp duration={2} className="counter text-light" end={11} />
+                <CountUp
+                  duration={2}
+                  className="counter text-light"
+                  end={200}
+                />
+                +
               </h1>
               <h5>Completed Projects</h5>
             </div>
             <div className="col-lg-3 col-md-6">
               <h1>
-                <CountUp duration={2} className="counter text-light" end={7} />
+                <CountUp duration={2} className="counter text-light" end={10} />
+                /m
               </h1>
               <h5>Transactions</h5>
             </div>
@@ -115,6 +130,7 @@ function About() {
                   className="counter text-light"
                   end={600}
                 />
+                +
               </h1>
               <h5>Happy Clients</h5>
             </div>
@@ -126,25 +142,31 @@ function About() {
         <div className="container info">
           <h1 className="black pt-5 ">About the Product</h1>
           <h4>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using is that it has a more-or-less normal distribution of
-            letters, as opposed to using ‘Content here, content here’, making it
-            look like readable English. Many desktop publishing packages and web
-            page editors now use as their default model text, and a search for
-            ‘’ will uncover many web sites still in their infancy.
+            Thank you for joining SSL Training. We at SSL Training (“SSL
+            Training”, “we”, “us”) respect your privacy and want you to
+            understand how we collect, use, and share data about you. This
+            Privacy Policy covers our data collection practices and describes
+            your rights regarding your personal data. Unless we link to a
+            different policy or state otherwise, this Privacy Policy applies
+            when you visit or use SSL Training websites, mobile applications,
+            APIs, or related services (the “Services”). It also applies to
+            prospective customers of our business and enterprise products. By
+            using the Services, you agree to the terms of this Privacy Policy.
+            You shouldn’t use the Services if you don’t agree with this Privacy
+            Policy or any other agreement that governs your use of the Services.
           </h4>
           <div className="about-info pt-5">
             <h1 className="black ">Information Collection</h1>
             <h4>
-              It is a long established fact that a reader will be distracted by
-              the readable content of a page when looking at its layout. The
-              point of using is that it has a more-or-less normal distribution
-              of letters, as opposed to using ‘Content here, content here’,
-              making it look like readable English. Many desktop publishing
-              packages and web page editors now use as their default model text,
-              and a search for ‘’ will uncover many web sites still in their
-              infancy.
+              We collect certain data from you directly, like information you
+              enter yourself, data about your consumption of content, and data
+              from third-party platforms you connect with SSL Training. We also
+              collect some data automatically, like information about your
+              device and what parts of our Services you interact with or spend
+              time using. All data listed in this section is subject to the
+              following processing activities: collecting, recording,
+              structuring, storing, altering, retrieving, encrypting,
+              pseudonymizing, erasing, combining, and transmitting.
             </h4>
           </div>
         </div>
@@ -156,54 +178,62 @@ function About() {
         </div>
         <div className="container info-heading">
           <h1 className=" black">Non-Identifiable or Aggregated Data</h1>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using is that it has a more-or-less normal distribution of
-            letters, as opposed to using ‘Content here, content here’, making it
-            look like readable English. Many desktop publishing packages and web
-            page editors now use as their default model text, and a search for
-            ‘’ will uncover many web sites still in their infancy.
+          <p className="my-text">
+            When you access content, we collect certain data including which
+            courses, assignments, labs, workspaces, and quizzes you’ve started
+            and completed; content and subscription purchases and credits;
+            subscriptions; completion certificates; your exchanges with
+            instructors, teaching assistants, and other students; and essays,
+            answers to questions, and other items submitted to satisfy course
+            and related content requirements.
           </p>
-          <p>
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using is that it has a more-or-less normal distribution of
-            letters, as opposed to using ‘Content here, content here’, making it
-            look like readable English. Many desktop publishing packages and web
-            page editors now use as their default model text, and a search for
-            ‘’ will uncover many web sites still in their infancy.
+          <p className="my-text">
+            We use your data to do things like provide our Services, communicate
+            with you, troubleshoot issues, secure against fraud and abuse,
+            improve and update our Services, analyze how people use our
+            Services, serve personalized advertising, and as required by law or
+            necessary for safety and integrity. We retain your data for as long
+            as it is needed to serve the purposes for which it was collected.
           </p>
-          <h2 className="black contacting">Contacting letsremotify</h2>
-          <p>
-            You may address any questions or concerns about letsremotify Privacy
-            Policy or data handling policies of this Service to
-            support@sslsoltution.com by email or letter, as follows:
+          <h2 className="black">Contact SSL Trainings</h2>
+          <p className="my-text">
+            <a
+              href="https://www.google.com/maps/place/SSL+SOLUTIONS/@31.5349517,74.3462811,19z/data=!3m1!4b1!4m6!3m5!1s0x391905d3e3ae6b77:0x157a2f53f97b67c6!8m2!3d31.5349506!4d74.3469248!16s%2Fg%2F11lpw1_rd4?entry=ttu"
+              target="_blank"
+              className="info-hover"
+            >
+              {" "}
+              Office 303, 3rd Floor, Landmark Plaza Jail Road, Lahore
+            </a>{" "}
+            <br></br>
+            <span></span>
           </p>
-          <br></br>
-          <p>
-            Address: Office # 303, 3rd Floor, Landmark Plaza, Jail road,
-            Lahore., <br></br>
-          </p>
-          <p>
-            Telephone: <span className="info-hover">+92-311-4767758</span>{" "}
-            <br></br>{" "}
+          <p className="my-text">
+            Telephone:{" "}
+            <a href="tel:+923114767758" className="info-hover">
+              +92-311-4767758
+            </a>
+            <br /> <br />
             <span>
-              Email: <span className="info-hover">contact@ssltraining.com</span>
+              Email:{" "}
+              <a href="mailto:contact@ssltraining.com" className="info-hover">
+                contact@ssltraining.com
+              </a>
             </span>
           </p>
           <br></br>
-          <button className="contact-btn">Connect SSL Solution</button>
+          <Link to="/contact">
+            {" "}
+            <button className="contact-btn">Connect SSL Training</button>
+          </Link>
         </div>
       </div>
 
       <div className="container text-center companies pb-5 pt-5">
         <h1 className=" black">Companies we work with</h1>
         <p className="companies-about">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using is that it has a more-or-less normal distribution of letters, as
-          opposed.
+          Trusted by over 15,000 companies and millions of learners around the
+          world
         </p>
         <div className="companies-img mt-5">
           <img
@@ -216,10 +246,9 @@ function About() {
       <div className="container text-center companies pb-5 pt-5">
         <h1 className=" black">Integrations</h1>
         <p className="companies-about">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using is that it has a more-or-less normal distribution of letters, as
-          opposed.
+          Our platform empowers thousands of companies to operate their
+          platforms seamlessly. They stand in support of us, and they express
+          their confidence without hesitation.
         </p>
       </div>
 
@@ -234,16 +263,6 @@ function About() {
                   <span className="text-muted social">Social</span>
                 </h2>
               </div>
-              <div className="card-body">
-                <h3 className="black">Easy Goal Setting</h3>
-                <p className="">
-                  dolor sit amet, consectetur adipiscing elit. Proin consectetur
-                  justo quis euismod vehicula. Quisque diam dui, imperdiet{" "}
-                  <br />
-                  <br />
-                  <a href="">View integrations</a>
-                </p>
-              </div>
             </div>
           </div>
 
@@ -256,16 +275,6 @@ function About() {
                   <br></br> <span className="text-muted social">Social</span>
                 </h2>
               </div>
-              <div className="card-body">
-                <h3 className="black">Easy Goal Setting</h3>
-                <p className="">
-                  dolor sit amet, consectetur adipiscing elit. Proin consectetur
-                  justo quis euismod vehicula. Quisque diam dui, imperdiet{" "}
-                  <br />
-                  <br />
-                  <a href="">View integrations</a>
-                </p>
-              </div>
             </div>
           </div>
 
@@ -277,16 +286,6 @@ function About() {
                   <span className="social-heading">Youtube</span> <br></br>{" "}
                   <span className="text-muted social">Social</span>
                 </h2>
-              </div>
-              <div className="card-body">
-                <h3 className="black">Easy Goal Setting</h3>
-                <p className="">
-                  dolor sit amet, consectetur adipiscing elit. Proin consectetur
-                  justo quis euismod vehicula. Quisque diam dui, imperdiet{" "}
-                  <br />
-                  <br />
-                  <a href="">View integrations</a>
-                </p>
               </div>
             </div>
           </div>

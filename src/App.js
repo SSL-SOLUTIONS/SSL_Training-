@@ -9,12 +9,7 @@ import Footer from "./Components/Footer";
 import Blog from "./Pages/Blog";
 import About from "./Pages/About";
 import Pricing from "./Pages/Pricing.js";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Privacy from "./Pages/Privacy";
 import Contact from "./Pages/Contact";
 
@@ -40,7 +35,7 @@ function App() {
   const [user, setUser] = useState({
     role: "user",
   });
- const token = localStorage.getItem("token");
+  const token = localStorage.getItem("token");
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
@@ -76,83 +71,83 @@ function App() {
     <>
       <AuthProvider user={user}>
         <div className="main">
-          <Router>
-            {/* Restrict navbar links to user's role */}
-            <Routes>
-              {user.role !== undefined && (
-                <Route path="navbar" element={<Navbar />} />
-              )}
-              <Route path="/Footer" element={<Footer />} />
-              <Route path="/" element={<Swift_Hiring />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/pricing" element={<Pricing />} />
-              <Route path="/privacy" element={<Privacy />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route
-                path="/InformationCollection"
-                element={<InformationCollection />}
-              />
-              <Route path="/InformationUsage" element={<InformationUsage />} />
+          {/* Restrict navbar links to user's role */}
+          <Routes>
+            {user.role !== undefined && (
+              <Route path="navbar" element={<Navbar />} />
+            )}
+            <Route path="/Footer" element={<Footer />} />
+            <Route path="/" element={<Swift_Hiring />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route
+              path="/InformationCollection"
+              element={<InformationCollection />}
+            />
+            <Route path="/InformationUsage" element={<InformationUsage />} />
 
-              <Route path="/Category1" element={<Category1 />} />
-              <Route path="/Category2" element={<Category2 />} />
-              <Route path="/Category3" element={<Category3 />} />
-              <Route path="/Uncategorized" element={<Uncategorized />} />
+            <Route path="/Category1" element={<Category1 />} />
+            <Route path="/Category2" element={<Category2 />} />
+            <Route path="/Category3" element={<Category3 />} />
+            <Route path="/Uncategorized" element={<Uncategorized />} />
 
-              {/* Courses */}
-              <Route path="/courses" element={<Courses />} />
-              <Route path="/courses/:courseId" element={<CourseDetails />} />
+            {/* Courses */}
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/courses/:courseId" element={<CourseDetails />} />
 
-              {/* Quiz Pannel */}
-              <Route
-                path="/adminpannel/quiz-pannel"
-                element={
-                  user && user.role === "admin" ? (
-                    <QuizForm />
-                  ) : (
-                    <Navigate to="/" />
-                  )
-                }
-              />
-              {/* Courses Pannel */}
-              <Route
-                path="/adminpannel/courses-pannel"
-                element={
-                  user && user.role === "admin" ? (
-                    <AdminCoursesPanel />
-                  ) : (
-                    <Navigate to="/" />
-                  )
-                }
-              />
+            {/* Quiz Pannel */}
+            <Route
+              path="/adminpannel/quiz-pannel"
+              element={
+                user && user.role === "admin" ? (
+                  <QuizForm />
+                ) : (
+                  <Navigate to="/" />
+                )
+              }
+            />
+            {/* Courses Pannel */}
+            <Route
+              path="/adminpannel/courses-pannel"
+              element={
+                user && user.role === "admin" ? (
+                  <AdminCoursesPanel />
+                ) : (
+                  <Navigate to="/" />
+                )
+              }
+            />
 
-              {/* Quiz Page */}
-              <Route path="/quiz" element={<Quiz />} />
+            {/* Quiz Page */}
+            <Route path="/quiz" element={<Quiz />} />
 
-              {/* SIGNUP & LOGIn */}
-              <Route path="/Signup" element={<SignUp />} />
-              <Route path="/Login" element={<Login />} />
+            {/* SIGNUP & LOGIn */}
+            <Route path="/Signup" element={<SignUp />} />
+            <Route path="/Login" element={<Login />} />
 
-              {/*  PANNEL LINKS*/}
-              <Route
-                path="/adminpanel"
-                element={
-                  user && user.role === "admin" ? (
-                    <PannelLinks />
-                  ) : (
-                    <Navigate to="/" />
-                  )
-                }
-              />
+            {/*  PANNEL LINKS*/}
+            <Route
+              path="/adminpanel"
+              element={
+                user && user.role === "admin" ? (
+                  <PannelLinks />
+                ) : (
+                  <Navigate to="/" />
+                )
+              }
+            />
 
-              {/* User Profile page */}
-              <Route
-                path="/user-profile"
-                element={user && token ? <UserProfile /> : <Navigate to="/login" />}
-              />
-            </Routes>
-          </Router>
+            {/* User Profile page */}
+            <Route
+              path="/user-profile"
+              element={
+                user && token ? <UserProfile /> : <Navigate to="/login" />
+              }
+            />
+          </Routes>
         </div>
       </AuthProvider>
     </>
