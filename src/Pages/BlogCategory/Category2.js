@@ -82,7 +82,7 @@ function Category2() {
               <div className="container">
                 <h3 className="mt-3">Breaking News</h3>
                 <p className="mt-3 blog-set">
-                  <i className="fa-solid fa-user ml-2 mr-1"></i>Ali,{" "}
+                  <i className="fa-solid fa-user ml-2 mr-1"></i>Author,{" "}
                   <span className="text-center">
                     <i className="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023
                   </span>
@@ -107,7 +107,7 @@ function Category2() {
               <div className="container">
                 <h3 className="mt-3">Breaking News</h3>
                 <p className="mt-3 blog-set">
-                  <i className="fa-solid fa-user ml-2 mr-1"></i>Ali,{" "}
+                  <i className="fa-solid fa-user ml-2 mr-1"></i>Author,{" "}
                   <span className="text-center">
                     <i className="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023
                   </span>
@@ -132,7 +132,7 @@ function Category2() {
               <div className="container">
                 <h3 className="mt-3">Breaking News</h3>
                 <p className="mt-3 blog-set">
-                  <i className="fa-solid fa-user ml-2 mr-1"></i>Ali,{" "}
+                  <i className="fa-solid fa-user ml-2 mr-1"></i>Author,{" "}
                   <span className="text-center">
                     <i className="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023
                   </span>
@@ -159,7 +159,7 @@ function Category2() {
               <div className="container">
                 <h3 className="mt-3">Breaking News</h3>
                 <p className="mt-3 blog-set">
-                  <i className="fa-solid fa-user ml-2 mr-1"></i>Ali,{" "}
+                  <i className="fa-solid fa-user ml-2 mr-1"></i>Author,{" "}
                   <span className="text-center">
                     <i className="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023
                   </span>
@@ -184,7 +184,7 @@ function Category2() {
               <div className="container">
                 <h3 className="mt-3">Breaking News</h3>
                 <p className="mt-3 blog-set">
-                  <i className="fa-solid fa-user ml-2 mr-1"></i>Ali,{" "}
+                  <i className="fa-solid fa-user ml-2 mr-1"></i>Author,{" "}
                   <span className="text-center">
                     <i className="fa-solid fa-calendar-days ml-5 mr-1"></i> May 2023
                   </span>
