@@ -95,5 +95,9 @@
   }
   .right-Demoform {
     margin-top: 2rem;
+    padding: 0.5rem;
+  }
+  .demoForm {
+    margin: 0 !important;
   }
 }

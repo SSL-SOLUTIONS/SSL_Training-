@@ -96,7 +96,7 @@ const Demo = () => {
           <h2>Schedule a Demo</h2>
           <p>With our goal tracking platform, you can stay organized.</p>
 
-          <form onSubmit={handleSubmit}>
+          <form className="demoForm" onSubmit={handleSubmit}>
             <div className="input-cont">
               <label htmlFor="Name">
                 Name<span>*</span>

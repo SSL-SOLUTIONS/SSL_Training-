@@ -10,7 +10,7 @@ function Swift_Hiring() {
     <>
       <Navbar />
       <div className="container-fluid bg-light" style={{ marginTop: "-48px" }}>
-        <div className="text-center container mt-5">
+        <div className="container-hiring text-center container mt-5">
           <h1 className="hiring pt-5">
             Swift Hiring Solutions<span>:</span> Discover Top Engineers
           </h1>

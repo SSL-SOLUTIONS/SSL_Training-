@@ -16,7 +16,6 @@ h1 span {
   background-color: rgb(18, 135, 111);
   color: white;
   transition: 0.6s;
-
 }
 
 .demo-btn_1 .btn_1:hover {
@@ -24,7 +23,6 @@ h1 span {
   border: 1px solid rgb(18, 135, 111);
   color: rgb(18, 135, 111);
   transition: 0.6s;
-
 }
 
 .demo-btn_1 {
@@ -41,7 +39,6 @@ h1 span {
   background-color: #e7f8f1;
   color: rgb(18, 135, 111);
   transition: 0.6s;
-
 }
 
 .demo-btn_2 .btn_2:hover {
@@ -83,7 +80,6 @@ h1 span {
     text-align: initial;
     text-align: center;
   }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -93,12 +89,20 @@ h1 span {
 }
 
 @media only screen and (max-width: 600px) {
-  .demo-btn_2 {
-    margin-top: 5px;
+  .demo-btn_2,
+  .demo-btn_1 {
+    margin: 10px 0;
+    text-align: center;
   }
 }
 
-
+@media screen and (max-width: 990px) {
+  .demo-btn_2,
+  .demo-btn_1 {
+    margin: 10px 0;
+    text-align: center;
+  }
+}
 
 @keyframes animateWave {
   0% {
