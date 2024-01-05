@@ -8,6 +8,7 @@ const fileUploadRoutes = require("./routes/auth");
 const protectedRoute = require("./routes/protectedRoute");
 const coursesRoute = require("./routes/courses");
 const quizRoute = require("./routes/quiz");
+const requestDemo = require("./routes/reqDemo");
 const cors = require("cors");
 require("dotenv").config();
 
@@ -49,7 +50,8 @@ app.use("/auth", fileUploadRoutes);
 app.use("/protected", protectedRoute);
 app.use("/courses", coursesRoute);
 app.use("/quiz", quizRoute);
-// Error handling middleware
+app.use("/requestDemo", requestDemo);
+
 
 
 app.listen(PORT, async () => {
