@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import Axios from "axios";
+import axios from "axios";
 import "./CourseDetails.css";
 import { FaRegClock } from "react-icons/fa6";
 import { SiLevelsdotfyi } from "react-icons/si";
@@ -28,9 +28,7 @@ const CourseDetails = () => {
   useEffect(() => {
     const fetchCourseDetails = async () => {
       try {
-        const response = await Axios.get(
-          `http://localhost:8080/courses/${courseId}`
-        );
+        const response = await axios.get(`/courses/${courseId}`);
         const fetchedCourseDetails = response.data;
         setCourseDetails(fetchedCourseDetails);
       } catch (error) {
@@ -40,9 +38,7 @@ const CourseDetails = () => {
 
     const fetchMoreCourses = async () => {
       try {
-        const response = await Axios.get(
-          `http://localhost:8080/courses/more/${courseId}`
-        );
+        const response = await axios.get(`/courses/more/${courseId}`);
         const fetchedMoreCourses = response.data;
         setMoreCourses(fetchedMoreCourses);
       } catch (error) {
@@ -236,7 +232,7 @@ const CourseDetails = () => {
       <div className="course-instructor-cont">
         <div className="inst-img">
           <img
-            src={`http://localhost:8080/uploads/courses/${courseDetails.instructorImage}`}
+            src={`${axios.defaults.baseURL}/uploads/courses/${courseDetails.instructorImage}`}
             alt=""
           />
           <h4>{courseDetails.instructorName}</h4>
@@ -260,7 +256,7 @@ const CourseDetails = () => {
               <div className="img">
                 <img
                   className="image-img"
-                  src={`http://localhost:8080/uploads/courses/${course.image}`}
+                  src={`${axios.defaults.baseURL}/uploads/courses/${course.image}`}
                   alt="img"
                 />
               </div>

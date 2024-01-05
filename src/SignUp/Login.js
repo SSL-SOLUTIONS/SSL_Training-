@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "../SignUp/Style.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import Axios from "axios";
+import axios from "axios";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
@@ -41,8 +41,8 @@ const Login = () => {
     }
 
     try {
-      const response = await Axios.post(
-        "http://localhost:8080/auth/login",
+      const response = await axios.post(
+        "/auth/login",
         formData
       );
 

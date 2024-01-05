@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../SignUp/Style.css";
 import { NavLink, useNavigate } from "react-router-dom";
-import Axios from "axios";
+import axios from "axios";
 import Navbar from "../Components/Navbar";
 import Footer from "../Components/Footer";
 
@@ -130,8 +130,8 @@ const SignUp = () => {
      formDataToSubmit.append("filename", formData.filename);
 
      try {
-       const response = await Axios.post(
-         "http://localhost:8080/auth/signup",
+       const response = await axios.post(
+         "/auth/signup",
          formDataToSubmit,
          {
            headers: {
@@ -176,7 +176,7 @@ const SignUp = () => {
 
   return (
     <div>
-    <Navbar/>
+      <Navbar />
       <div className="container-fluid">
         <div className="row">
           <div className="col-lg-6">
@@ -200,7 +200,7 @@ const SignUp = () => {
                 onSubmit={handleSignUp}
                 method="POST"
                 encType="multipart/form-data"
-                action="http://localhost:8080/auth/signup"
+                action={`${axios.defaults.baseURL}/auth/signup`}
               >
                 <h5>
                   <b>Name</b>
@@ -364,8 +364,8 @@ const SignUp = () => {
                   <br></br>
                   <br></br>
                   <h5>
-                    Already have an account? 
-                    <NavLink to="/Login">    Login</NavLink>
+                    Already have an account?
+                    <NavLink to="/Login"> Login</NavLink>
                   </h5>
                 </div>
               </form>
@@ -373,7 +373,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

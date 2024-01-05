@@ -4,6 +4,7 @@ import "./Courses.css";
 import Course from "../../Components/course/Course";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
+import axios from "axios";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
@@ -14,16 +15,15 @@ const Courses = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await fetch("http://localhost:8080/courses");
-        const data = await response.json();
-        setCourses(data);
+        const response = await axios.get("/courses");
+        setCourses(response.data);
       } catch (error) {
         console.error(error);
       }
     };
 
     fetchCourses();
-  }, []); // Empty dependency array to ensure it runs only once
+  }, []);
 
   const filteredCourses = courses.filter((item) => {
     // Filter by category

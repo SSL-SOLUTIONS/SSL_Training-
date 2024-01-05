@@ -3,7 +3,7 @@ import "./UserProfile.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
-import axios from "./axiosConfig";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 function UserProfile() {
@@ -47,7 +47,7 @@ function UserProfile() {
       // Get the token from local storage
       const token = localStorage.getItem("token");
       const response = await axios.post(
-        "http://localhost:8080/auth/update-profile",
+        "/auth/update-profile",
         formData,
         {
           headers: {
@@ -74,7 +74,7 @@ function UserProfile() {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/auth/profile", {
+        const response = await axios.get("/auth/profile", {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
           },

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import axios from "axios";
 
 const AdminCoursesForm = ({ onAddCourse }) => {
   const [course, setCourse] = useState({
@@ -68,12 +69,10 @@ const AdminCoursesForm = ({ onAddCourse }) => {
 
     try {
       // Pass the new course to the parent component
-      const response = await fetch("http://localhost:8080/courses", {
-        method: "POST",
-        body: formData,
-      });
-
-      const data = await response.json();
+      const response = await axios.post(
+        "/courses",
+        formData
+      );
       alert("Course added succesfully");
 
       // Reset the form if needed

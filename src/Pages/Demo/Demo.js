@@ -33,7 +33,7 @@ const Demo = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/requestDemo/upload",
+        "/requestDemo/upload",
         formData
       );
       setFormData({

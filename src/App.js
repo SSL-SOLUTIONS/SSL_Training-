@@ -31,12 +31,14 @@ import PannelLinks from "./Pages/PannelLinks/PannelLinks";
 import QuizForm from "./Pages/Quiz/Form/QuizForm";
 import UserProfile from "./Pages/UserProfile/UserProfile";
 import Demo from "./Pages/Demo/Demo";
+import axios from "axios";
 
 function App() {
   const [user, setUser] = useState({
     role: "user",
   });
   const token = localStorage.getItem("token");
+
   useEffect(() => {
     const fetchUserDetails = async () => {
       try {
@@ -46,16 +48,14 @@ function App() {
           return;
         }
 
-        const response = await fetch("http://localhost:8080/auth/profile", {
-          method: "GET",
+        const response = await axios.get("/auth/profile", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
         });
 
-        if (response.ok) {
-          const userData = await response.json();
-          setUser(userData.user);
+        if (response.status === 200) {
+          setUser(response.data.user);
         } else if (response.status === 403) {
           console.log("Access Forbidden:", response.statusText);
         } else {

@@ -3,7 +3,7 @@ import React from "react";
 import "./Course.css";
 import ReactStars from "react-rating-stars-component";
 import { useNavigate } from "react-router-dom";
-
+import axios from "axios";
 const Course = (props) => {
   const ratingChanged = (newRating) => {};
   const navigate = useNavigate();
@@ -17,7 +17,7 @@ const Course = (props) => {
       <div className="course-image-cont">
         <img
           className="image-img"
-          src={`http://localhost:8080/uploads/courses/${props.img}`}
+          src={`${axios.defaults.baseURL}/uploads/courses/${props.img}`}
           alt="img"
         />
       </div>
@@ -29,7 +29,7 @@ const Course = (props) => {
           size={18}
           activeColor="#ffd700"
         />
-        <h6 >Rs. {props.price} </h6>
+        <h6>Rs. {props.price} </h6>
         <p>{props.desc}</p>
       </div>
     </div>

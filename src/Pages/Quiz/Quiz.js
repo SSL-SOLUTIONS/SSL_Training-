@@ -23,7 +23,7 @@ const Quiz = () => {
     const fetchQuestions = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:8080/quiz/questions"
+          "/quiz/questions"
         );
         setQuestions(response.data);
       } catch (error) {
