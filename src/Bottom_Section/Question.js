@@ -17,6 +17,7 @@ const Question = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="accordion" id="accordionExample">
+                {/* Question 1 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingOne">
                     <h5 className="mb-0">
@@ -24,7 +25,7 @@ const Question = () => {
                         What is SSL Training?
                       </button>
                       <i
-                        className="accordion-icon btn fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseOne"
                         aria-expanded="false"
@@ -45,14 +46,15 @@ const Question = () => {
                   </div>
                 </div>
 
+                {/* Question 2 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingTwo">
                     <h5 className="mb-0">
-                      <button className="accordion-icon btn">
+                      <button className="according-icon btn">
                         Is it possible to apply online for admission?
                       </button>
                       <i
-                        className="accordion-icon btn mt-1 accordion-icon btn fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseTwo"
                         aria-expanded="false"
@@ -75,15 +77,17 @@ const Question = () => {
                     </div>
                   </div>
                 </div>
+
+                {/* Question 3 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingThree">
                     <h5 className="mb-0">
-                      <button className="accordion-icon btn">
+                      <button className="according-icon btn">
                         What can cause the rejection of an admission
                         application?
                       </button>
                       <i
-                        className="accordion-icon btn mt-1 fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseThree"
                         aria-expanded="false"
@@ -100,25 +104,26 @@ const Question = () => {
                     <div className="card-body text-dark">
                       SSL training has the right to accept or reject the
                       admission application to any of its courses. The rejection
-                      usually occurs if the candidate not fulfill the admission
-                      requirement or is not up to the selection criteria for a
-                      particular course.
+                      usually occurs if the candidate does not fulfill the
+                      admission requirement or is not up to the selection
+                      criteria for a particular course.
                     </div>
                   </div>
                 </div>
 
+                {/* Question 4 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingFour">
                     <h5 className="mb-0">
-                      <button className="accordion-icon btn">
+                      <button className="according-icon btn">
                         Is it possible to freeze my course?
                       </button>
                       <i
-                        className="accordion-icon btn mt-1 fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseFour"
                         aria-expanded="false"
-                        aria-controls="collapseThree"
+                        aria-controls="collapseFour"
                       ></i>
                     </h5>
                   </div>
@@ -131,24 +136,25 @@ const Question = () => {
                     <div className="card-body text-dark">
                       Yes, the candidate can freeze the course, but in this
                       context, he or she has to pay the full fee for that
-                      particular course. Moreover, this option can be opting
-                      only within 7 days from the beginning of the classes.
+                      particular course. Moreover, this option can be opted only
+                      within 7 days from the beginning of the classes.
                     </div>
                   </div>
                 </div>
 
+                {/* Question 5 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingFive">
                     <h5 className="mb-0">
-                      <button className="accordion-icon btn">
+                      <button className="according-icon btn">
                         How can I pay through JazzCash?
                       </button>
                       <i
-                        className="accordion-icon btn mt-1 fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseFive"
                         aria-expanded="false"
-                        aria-controls="collapseThree"
+                        aria-controls="collapseFive"
                       ></i>
                     </h5>
                   </div>
@@ -166,32 +172,33 @@ const Question = () => {
                   </div>
                 </div>
 
+                {/* Question 6 */}
                 <div className="card bg-light">
                   <div className="card-header" id="headingSix">
                     <h5 className="mb-0">
-                      <button className="accordion-icon btn">
+                      <button className="according-icon btn">
                         Is there any priority for admission?
                       </button>
                       <i
-                        className="accordion-icon btn mt-1 fas fa-angle-down float-right"
+                        className="fas fa-chevron-down float-right"
                         data-toggle="collapse"
                         data-target="#collapseSix"
                         aria-expanded="false"
-                        aria-controls="collapseThree"
+                        aria-controls="collapseSix"
                       ></i>
                     </h5>
                   </div>
                   <div
                     id="collapseSix"
                     className="collapse"
-                    aria-labelledby="headingThree"
+                    aria-labelledby="headingSix"
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
                       SSL Trainings does not prioritize admissions on any
-                      standard. All the programs are first-come, first,
-                      first-serve basis. Once all the seats are filled, we will
-                      not take any further enrolments.
+                      standard. All the programs are first-come, first-serve
+                      basis. Once all the seats are filled, we will not take any
+                      further enrolments.
                     </div>
                   </div>
                 </div>
