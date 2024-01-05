@@ -24,14 +24,20 @@ function Swift_Hiring() {
 
           <div className="row tab-screen">
             <div className="col-lg-6 demo-btn_1">
-              <button className="m-auto btn_1 py-2 rounded">
-                Request demo
-              </button>
+              <Link to="/request-demo">
+                {" "}
+                <button className="m-auto btn_1 py-2 rounded">
+                  Request demo
+                </button>
+              </Link>
             </div>
             <div className="col-lg-6 demo-btn_2">
               <Link to="/quiz">
                 {" "}
-                <button style={{fontWeight: "700"}} className="m-auto btn_2 py-2 rounded">
+                <button
+                  style={{ fontWeight: "700" }}
+                  className="m-auto btn_2 py-2 rounded"
+                >
                   Start trial Quiz
                 </button>{" "}
               </Link>

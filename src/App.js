@@ -30,6 +30,7 @@ import { AuthProvider } from "./AuthContext/AuthContext";
 import PannelLinks from "./Pages/PannelLinks/PannelLinks";
 import QuizForm from "./Pages/Quiz/Form/QuizForm";
 import UserProfile from "./Pages/UserProfile/UserProfile";
+import Demo from "./Pages/Demo/Demo";
 
 function App() {
   const [user, setUser] = useState({
@@ -139,6 +140,7 @@ function App() {
                 )
               }
             />
+            <Route path="/request-demo" element={<Demo />} />
 
             {/* User Profile page */}
             <Route

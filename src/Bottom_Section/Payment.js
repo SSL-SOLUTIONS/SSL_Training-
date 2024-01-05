@@ -71,9 +71,12 @@ function Payment() {
                       <li>Screen and Interview</li>
                       <hr />
                       <li className="mb-4">
-                        <button className="btn btn-outline-primary py-2 w-50">
-                          Buy Now
-                        </button>
+                        <Link to="/request-demo">
+                          {" "}
+                          <button className="btn btn-outline-primary py-2 w-50">
+                            Buy Now
+                          </button>
+                        </Link>
                       </li>
                     </div>
                   </div>
@@ -101,9 +104,12 @@ function Payment() {
                     <li>Screen and Interview</li>
                     <hr />
                     <li className="mb-4">
-                      <button className="btn btn-primary py-2 w-50">
-                        Buy now
-                      </button>
+                      <Link to="/request-demo">
+                        {" "}
+                        <button className="btn btn-primary py-2 w-50">
+                          Buy now
+                        </button>
+                      </Link>
                     </li>
                   </div>
                 </div>
