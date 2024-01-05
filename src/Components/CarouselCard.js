@@ -44,12 +44,13 @@ function CarouselCard() {
                           />
                           <div className="text-right"></div>
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">John H.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              I had an amazing experience with this company! The
+                              customer service was top-notch, and the learning
+                              experience exceeded my expectations. I highly
+                              recommend them to anyone looking for quality
+                              products and excellent service.
                             </p>
                           </div>
                         </div>
@@ -63,12 +64,13 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1517760444937-f6397edcbbcd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=42b2d9ae6feb9c4ff98b9133addfb698"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Sarah L.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              I am a repeat joinee of this learning platform,
+                              and they never disappoint. The team is always
+                              friendly and helpful, and their products are
+                              outstanding. I’ve recommended them to all my
+                              friends and family, and I will continue to do so!
                             </p>
                           </div>
                         </div>
@@ -81,12 +83,14 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3d2e8a2039c06dd26db977fe6ac6186a"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">David W.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              After trying several other platforms, I finally
+                              found the perfect fit with this one. Their
+                              attention to detail and commitment to their
+                              clients satisfaction is unparalleled. I will
+                              definitely be using their services again in the
+                              future.
                             </p>
                           </div>
                         </div>
@@ -103,12 +107,13 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1532771098148-525cefe10c23?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=3f317c1f7a16116dec454fbc267dd8e4"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Emily R.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              I can’t say enough good things about this
+                              business. From the moment I contacted them, they
+                              were responsive and accommodating. The quality of
+                              their work is exceptional, and I couldn’t be
+                              happier with the final result.
                             </p>
                           </div>
                         </div>
@@ -121,12 +126,14 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1532715088550-62f09305f765?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ebadb044b374504ef8e81bdec4d0e840"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Mark T.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              I’ve been a loyal customer for years, and I
+                              continue to be impressed with this company. Their
+                              team is dedicated to providing the best service
+                              possible, and it shows in every interaction. I
+                              highly recommend them to anyone in need of their
+                              services.
                             </p>
                           </div>
                         </div>
@@ -139,12 +146,14 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=0754ab085804ae8a3b562548e6b4aa2e"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Lisa M.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              “I recently made a purchase from this platform,
+                              and I am extremely satisfied with the entire
+                              course. The website is user-friendly, the ordering
+                              process is seamless, and the course started on
+                              time and in perfect scenerios. Thank you for a
+                              fantastic experience!”
                             </p>
                           </div>
                         </div>
@@ -161,12 +170,13 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=ee8417f0ea2a50d53a12665820b54e23"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Amanda P.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              “I had a fantastic experience with this business.
+                              The team was friendly, knowledgeable, and
+                              efficient. They made the entire process smooth and
+                              stress-free. I will definitely be using their
+                              services again in the future.”
                             </p>
                           </div>
                         </div>
@@ -179,12 +189,13 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1532777946373-b6783242f211?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=8ac55cf3a68785643998730839663129"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Robert K.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              “I was blown away by the level of professionalism
+                              and expertise displayed by this company. They went
+                              above and beyond to ensure my satisfaction, and I
+                              can confidently say that they have earned a
+                              lifelong customer.”
                             </p>
                           </div>
                         </div>
@@ -197,12 +208,12 @@ function CarouselCard() {
                             src="https://images.unsplash.com/photo-1532763303805-529d595877c5?ixlib=rb-0.3.5&amp;q=80&amp;fm=jpg&amp;crop=entropy&amp;cs=tinysrgb&amp;w=1080&amp;fit=max&amp;ixid=eyJhcHBfaWQiOjMyMDc0fQ&amp;s=5ee4fd5d19b40f93eadb21871757eda6"
                           />
                           <div className="card-body">
-                            <h4 className="card-title">
-                              Special title treatment
-                            </h4>
+                            <h4 className="card-title">Jennifer S.</h4>
                             <p className="card-text">
-                              With supporting text below as a natural lead-in to
-                              additional content.
+                              “Five stars all the way! The service, the product,
+                              and the overall experience were outstanding. I
+                              will definitely be a repeat customer and will
+                              recommend them to everyone I know.”
                             </p>
                           </div>
                         </div>

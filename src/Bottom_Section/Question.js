@@ -39,13 +39,8 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
-                      (Created By Ali Hussnain) (Created By Ali Hussnain Kida
-                      Talha Thik a)
+                      SSL Trainings makes the learning process easy and
+                      rewarding for both companies and developers.
                     </div>
                   </div>
                 </div>
@@ -54,7 +49,7 @@ const Question = () => {
                   <div className="card-header" id="headingTwo">
                     <h5 className="mb-0">
                       <button className="accordion-icon btn">
-                        What type of candidates does SSL Training target?
+                        Is it possible to apply online for admission?
                       </button>
                       <i
                         className="accordion-icon btn mt-1 accordion-icon btn fas fa-angle-down float-right"
@@ -72,13 +67,11 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
-                      (Created By Ali Hussnain) (Created By Ali Hussnain)
-                      (Created By Ali Hussnain)
+                      Yes, it is possible for a candidate can apply for a
+                      particular course online. Visit the Official Website here,
+                      you can find the details and online application form. The
+                      procedure makes it easy for the candidate outside Lahore
+                      to register for a particular course and start learning.
                     </div>
                   </div>
                 </div>
@@ -86,7 +79,8 @@ const Question = () => {
                   <div className="card-header" id="headingThree">
                     <h5 className="mb-0">
                       <button className="accordion-icon btn">
-                        Does SSL Training offer any support services?
+                        What can cause the rejection of an admission
+                        application?
                       </button>
                       <i
                         className="accordion-icon btn mt-1 fas fa-angle-down float-right"
@@ -104,13 +98,11 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
-                      (Created By Ali Hussnain) (Created By Ali Hussnain)
-                      (Created By Ali Hussnain)
+                      SSL training has the right to accept or reject the
+                      admission application to any of its courses. The rejection
+                      usually occurs if the candidate not fulfill the admission
+                      requirement or is not up to the selection criteria for a
+                      particular course.
                     </div>
                   </div>
                 </div>
@@ -119,7 +111,7 @@ const Question = () => {
                   <div className="card-header" id="headingFour">
                     <h5 className="mb-0">
                       <button className="accordion-icon btn">
-                        How does SSL Training make hiring more efficient?
+                        Is it possible to freeze my course?
                       </button>
                       <i
                         className="accordion-icon btn mt-1 fas fa-angle-down float-right"
@@ -137,12 +129,10 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
-                      (Created By Ali Hussnain) (Talha)
+                      Yes, the candidate can freeze the course, but in this
+                      context, he or she has to pay the full fee for that
+                      particular course. Moreover, this option can be opting
+                      only within 7 days from the beginning of the classes.
                     </div>
                   </div>
                 </div>
@@ -151,8 +141,7 @@ const Question = () => {
                   <div className="card-header" id="headingFive">
                     <h5 className="mb-0">
                       <button className="accordion-icon btn">
-                        How can SSL Training help me find the best talent for my
-                        company?
+                        How can I pay through JazzCash?
                       </button>
                       <i
                         className="accordion-icon btn mt-1 fas fa-angle-down float-right"
@@ -170,11 +159,9 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
+                      Using JazzCash, you can pay through below 3 options:{" "}
+                      <br /> • Mobile Account <br /> • Voucher Payment <br /> •
+                      Credit / Debit card
                     </div>
                   </div>
                 </div>
@@ -183,7 +170,7 @@ const Question = () => {
                   <div className="card-header" id="headingSix">
                     <h5 className="mb-0">
                       <button className="accordion-icon btn">
-                        What kind of questions am I expected to answer?
+                        Is there any priority for admission?
                       </button>
                       <i
                         className="accordion-icon btn mt-1 fas fa-angle-down float-right"
@@ -201,11 +188,10 @@ const Question = () => {
                     data-parent="#accordionExample"
                   >
                     <div className="card-body text-dark">
-                      SSL Solutions dolor sit amet, consectetur adipiscing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua. Egestas egestas fringilla phasellus faucibus
-                      scelerisque eleifend donec pretium vulputate. Id velit ut
-                      tortor pretium viverra suspendisse potenti nullam ac.
+                      SSL Trainings does not prioritize admissions on any
+                      standard. All the programs are first-come, first,
+                      first-serve basis. Once all the seats are filled, we will
+                      not take any further enrolments.
                     </div>
                   </div>
                 </div>
