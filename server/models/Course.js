@@ -1,3 +1,4 @@
+// models/Course.js
 const { DataTypes, Model } = require("sequelize");
 const sequelize = require("../config/config");
 
@@ -33,15 +34,7 @@ Course.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    objectives: {
-      type: DataTypes.TEXT("long"),
-      allowNull: false,
-    },
-    scope: {
-      type: DataTypes.TEXT("long"),
-      allowNull: false,
-    },
-    benefits: {
+    aboutCourse: {
       type: DataTypes.TEXT("long"),
       allowNull: false,
     },
@@ -50,11 +43,11 @@ Course.init(
       allowNull: false,
     },
     instructorDescription: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT("long"),
       allowNull: true,
     },
     instructorName: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
       allowNull: false,
     },
     instructorImage: {

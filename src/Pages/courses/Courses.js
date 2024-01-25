@@ -113,7 +113,7 @@ const Courses = () => {
             id={item.id}
             img={item.image}
             title={item.title}
-            desc={item.description}
+            desc={item.aboutCourse}
             price={item.price}
           />
         ))}

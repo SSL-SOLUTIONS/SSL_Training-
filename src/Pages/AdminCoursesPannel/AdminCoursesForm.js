@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import axios from "axios";
+import { Editor } from "@tinymce/tinymce-react";
 
 const AdminCoursesForm = ({ onAddCourse }) => {
   const [course, setCourse] = useState({
@@ -12,26 +13,29 @@ const AdminCoursesForm = ({ onAddCourse }) => {
     category: "",
     duration: "",
     skillLevel: "",
-    objectives: "",
-    scope: "",
-    benefits: "",
+    aboutCourse: "",
     videoUrl: "",
     instructorName: "",
     instructorImage: null,
     instructorDescription: "",
   });
 
+  const handleEditorChange = (content, editor) => {
+    setCourse((prevCourse) => ({
+      ...prevCourse,
+      description: content,
+    }));
+  };
+
   const handleChange = (e) => {
     const { name, value, type } = e.target;
 
-    // Handle file input separately
     if (type === "file") {
       setCourse((prevCourse) => ({
         ...prevCourse,
-        [name]: e.target.files[0], // Set the file itself
+        [name]: e.target.files[0],
       }));
     } else {
-      // Handle other input types
       setCourse((prevCourse) => ({
         ...prevCourse,
         [name]: value,
@@ -41,18 +45,16 @@ const AdminCoursesForm = ({ onAddCourse }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Validate the form data before adding the course
+
     if (
       !course.title ||
       !course.image ||
       !course.description ||
       !course.price ||
       !course.category ||
-      !course.scope ||
       !course.duration ||
       !course.skillLevel ||
-      !course.benefits ||
-      !course.objectives ||
+      !course.aboutCourse ||
       !course.videoUrl ||
       !course.instructorImage ||
       !course.instructorDescription ||
@@ -68,30 +70,27 @@ const AdminCoursesForm = ({ onAddCourse }) => {
     });
 
     try {
-      // Pass the new course to the parent component
-      const response = await axios.post(
-        "/courses",
-        formData
-      );
-      alert("Course added succesfully");
+      const response = await axios.post("/courses", formData);
+      alert("Course added successfully");
 
-      // Reset the form if needed
       setCourse({
         title: "",
         image: null,
-        description: "",
+        aboutCourse: "",
         price: "",
         category: "",
         duration: "",
         skillLevel: "",
-        objectives: "",
-        scope: "",
-        benefits: "",
+        description: "",
         videoUrl: "",
         instructorName: "",
         instructorImage: null,
         instructorDescription: "",
       });
+
+      if (onAddCourse) {
+        onAddCourse(response.data);
+      }
     } catch (error) {
       console.error("Error submitting form:", error);
     }
@@ -116,12 +115,12 @@ const AdminCoursesForm = ({ onAddCourse }) => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicDescription">
-          <Form.Label className="fw-bolder">Description: </Form.Label>
+          <Form.Label className="fw-bolder">About Course: </Form.Label>
           <Form.Control
-            name="description"
+            name="aboutCourse"
             className="border-success"
             type="text"
-            value={course.description}
+            value={course.aboutCourse}
             onChange={handleChange}
           />
         </Form.Group>
@@ -146,7 +145,7 @@ const AdminCoursesForm = ({ onAddCourse }) => {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formBasicImage">
-          <Form.Label className="fw-bolder">Image Upload:</Form.Label>
+          <Form.Label className="fw-bolder">Course Display Image:</Form.Label>
           <Form.Control
             type="file"
             name="image"
@@ -174,39 +173,7 @@ const AdminCoursesForm = ({ onAddCourse }) => {
             onChange={handleChange}
           />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicTextArea">
-          <Form.Label className="fw-bolder">Objectives:</Form.Label>
-          <textarea
-            name="objectives"
-            className="form-control text-break border-success"
-            id="exampleFormControlTextarea1"
-            rows="3"
-            value={course.objectives}
-            onChange={handleChange}
-          ></textarea>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicScope">
-          <Form.Label className="fw-bolder">Scope:</Form.Label>
-          <textarea
-            name="scope"
-            className="form-control text-break border-success"
-            id="exampleFormControlTextarea2"
-            rows="3"
-            onChange={handleChange}
-            value={course.scope}
-          ></textarea>
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicBenefits">
-          <Form.Label className="fw-bolder">Benefits:</Form.Label>
-          <textarea
-            name="benefits"
-            className="form-control text-break border-success"
-            id="exampleFormControlTextarea3"
-            rows="3"
-            value={course.benefits}
-            onChange={handleChange}
-          ></textarea>
-        </Form.Group>
+
         <Form.Group className="mb-3" controlId="formBasicURL">
           <Form.Label className="fw-bolder">Video URL:</Form.Label>
           <Form.Control
@@ -215,6 +182,21 @@ const AdminCoursesForm = ({ onAddCourse }) => {
             name="videoUrl"
             onChange={handleChange}
             value={course.videoUrl}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3" controlId="formBasicTextArea">
+          <Form.Label className="fw-bolder">Course Description:</Form.Label>
+          <Editor
+            apiKey="c53qlyi94y0m9krcs68nhbundgjmx552ur1alnoe373pp6sr"
+            value={course.description}
+            onEditorChange={handleEditorChange}
+            init={{
+              height: 300,
+              plugins:
+                "mentions anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount checklist mediaembed casechange export formatpainter pageembed permanentpen footnotes advtemplate advtable advcode editimage tableofcontents mergetags powerpaste tinymcespellchecker autocorrect a11ychecker typography inlinecss",
+              toolbar:
+                "undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table mergetags | align lineheight | tinycomments | checklist numlist bullist indent outdent | emoticons charmap | removeformat",
+            }}
           />
         </Form.Group>
         <h1 className="text-center">Course Instructor Details:</h1>

@@ -1,3 +1,4 @@
+// routes/courses.js
 const { Op } = require("sequelize");
 const express = require("express");
 const router = express.Router();
@@ -35,22 +36,22 @@ router.post(
       const {
         title,
         description,
+        aboutCourse,
         price,
         category,
         duration,
         skillLevel,
-        objectives,
-        scope,
-        benefits,
         videoUrl,
         instructorName,
         instructorDescription,
       } = req.body;
 
-      const image = req.files["image"] ? req.files["image"][0].filename : ""; // Get the uploaded image file name
-      const instructorImage = req.files["instructorImage"]
-        ? req.files["instructorImage"][0].filename
-        : ""; // Get the uploaded instructorImage file name
+      const image =
+        req.files && req.files["image"] ? req.files["image"][0].filename : "";
+      const instructorImage =
+        req.files && req.files["instructorImage"]
+          ? req.files["instructorImage"][0].filename
+          : "";
 
       const newCourse = await Course.create({
         title,
@@ -60,9 +61,7 @@ router.post(
         category,
         duration,
         skillLevel,
-        objectives,
-        scope,
-        benefits,
+        aboutCourse,
         videoUrl,
         instructorName,
         instructorDescription,
@@ -76,6 +75,7 @@ router.post(
     }
   }
 );
+
 // Get more courses (excluding the current course)
 router.get("/more/:currentCourseId", async (req, res) => {
   try {
@@ -83,7 +83,7 @@ router.get("/more/:currentCourseId", async (req, res) => {
     const courses = await Course.findAll({
       where: {
         id: {
-          [Op.not]: currentCourseId, // Exclude the current course
+          [Op.not]: currentCourseId,
         },
       },
     });

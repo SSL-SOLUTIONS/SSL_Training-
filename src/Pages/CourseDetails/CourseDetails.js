@@ -7,6 +7,7 @@ import axios from "axios";
 import "./CourseDetails.css";
 import { FaRegClock } from "react-icons/fa6";
 import { SiLevelsdotfyi } from "react-icons/si";
+import DOMPurify from "dompurify";
 
 const CourseDetails = () => {
   const navigate = useNavigate();
@@ -15,10 +16,9 @@ const CourseDetails = () => {
     title: "",
     duration: "",
     skillLevel: "",
-    objectives: "",
+    description: "",
     scope: "",
-    benefits: "",
-    videoUrl: "",
+    aboutCourse: "",
     instructorName: "",
     instructorDescription: "",
     instructorImage: "",
@@ -66,6 +66,8 @@ const CourseDetails = () => {
     window.scrollTo(0, 0);
   };
 
+  // Sanitize HTML content using DOMPurify
+  const sanitizedDescription = DOMPurify.sanitize(courseDetails.description);
   return (
     <>
       <Navbar />
@@ -74,7 +76,7 @@ const CourseDetails = () => {
           <div className="hero-left">
             <div className="hero-text">
               <h2>{courseDetails.title}</h2>
-              <h5>{courseDetails.description}</h5> <br />
+              <h5>{courseDetails.aboutCourse}</h5> <br />
               <span>
                 {" "}
                 <FaRegClock className="hero-icon" />
@@ -210,22 +212,10 @@ const CourseDetails = () => {
         <div className="course-details-section">
           <h4>Course Content:</h4>
           <h2 className="ml-3">{courseDetails.title}</h2>
-          <div className="details-sections">
-            <h3>Why is this course helpful?</h3> <br />
-            <p>{courseDetails.objectives}</p>
-          </div>
-          <div className="details-sections">
-            <br /> <h3>Objectives of this course</h3> <br />
-            <p>{courseDetails.objectives}</p>
-          </div>
-          <div className="details-sections">
-            <br /> <h3>Scope of the course</h3> <br />
-            <p>{courseDetails.scope}</p>
-          </div>
-          <div className="details-sections">
-            <br /> <h3>Benefits</h3> <br />
-            <p>{courseDetails.benefits}</p>
-          </div>
+          <div
+            className="details-sections"
+            dangerouslySetInnerHTML={{ __html: sanitizedDescription }}
+          />
         </div>
       </div>
 
