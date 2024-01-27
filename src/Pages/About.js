@@ -141,7 +141,7 @@ function About() {
       <div className="container mb-5 pb-5 info-bg bg-light">
         <div className="container info">
           <h1 className="black pt-5 ">About the Product</h1>
-          <h4>
+          <h5>
             Thank you for joining SSL Training. We at SSL Training (“SSL
             Training”, “we”, “us”) respect your privacy and want you to
             understand how we collect, use, and share data about you. This
@@ -154,10 +154,10 @@ function About() {
             using the Services, you agree to the terms of this Privacy Policy.
             You shouldn’t use the Services if you don’t agree with this Privacy
             Policy or any other agreement that governs your use of the Services.
-          </h4>
+          </h5>
           <div className="about-info pt-5">
             <h1 className="black ">Information Collection</h1>
-            <h4>
+            <h5>
               We collect certain data from you directly, like information you
               enter yourself, data about your consumption of content, and data
               from third-party platforms you connect with SSL Training. We also
@@ -167,7 +167,7 @@ function About() {
               following processing activities: collecting, recording,
               structuring, storing, altering, retrieving, encrypting,
               pseudonymizing, erasing, combining, and transmitting.
-            </h4>
+            </h5>
           </div>
         </div>
         <div className="container about-info-image mt-5 mb-5">
