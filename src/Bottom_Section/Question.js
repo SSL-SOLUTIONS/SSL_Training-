@@ -7,13 +7,12 @@ const Question = () => {
     <div className="container-fluid question-bg">
       <div className="container question-wrapper text-center mt-5">
         <h1 className="pt-5 black">Frequently asked questions</h1>
-        <h5 className="color">
+        <h5 className="color mb-3">
           Discover answers to various questions in our extensive FAQs section.
         </h5>
       </div>
       <section className="btc-accordion">
         <div className="container">
-          <br />
           <div className="row">
             <div className="col-md-12">
               <div className="accordion" id="accordionExample">
@@ -21,7 +20,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingOne">
                     <h5 className="mb-0">
-                      <button className="according-icon btn text-dark">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
                         What is SSL Training?
                       </button>
                       <i
@@ -50,7 +56,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingTwo">
                     <h5 className="mb-0">
-                      <button className="according-icon btn">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="true"
+                        aria-controls="collapseTwo"
+                      >
                         Is it possible to apply online for admission?
                       </button>
                       <i
@@ -82,7 +95,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingThree">
                     <h5 className="mb-0">
-                      <button className="according-icon btn">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="true"
+                        aria-controls="collapseThree"
+                      >
                         What can cause the rejection of an admission
                         application?
                       </button>
@@ -115,7 +135,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingFour">
                     <h5 className="mb-0">
-                      <button className="according-icon btn">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFour"
+                        aria-expanded="true"
+                        aria-controls="collapseFour"
+                      >
                         Is it possible to freeze my course?
                       </button>
                       <i
@@ -146,7 +173,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingFive">
                     <h5 className="mb-0">
-                      <button className="according-icon btn">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseFive"
+                        aria-expanded="true"
+                        aria-controls="collapseFive"
+                      >
                         How can I pay through JazzCash?
                       </button>
                       <i
@@ -176,7 +210,14 @@ const Question = () => {
                 <div className="card bg-light">
                   <div className="card-header" id="headingSix">
                     <h5 className="mb-0">
-                      <button className="according-icon btn">
+                      <button
+                        className="according-icon btn text-dark"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseSix"
+                        aria-expanded="true"
+                        aria-controls="collapseSix"
+                      >
                         Is there any priority for admission?
                       </button>
                       <i

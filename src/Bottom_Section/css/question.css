@@ -1,38 +1,40 @@
 .btc-accordion {
-    /* padding-top: 100px; */
+  /* padding-top: 100px; */
 }
 
-.card-header button{
-    font-family: 700;
-    font-size: 30px;
+.card-header button {
+  font-family: 700;
+  font-size: 30px;
 }
-
+.card-header > h5 > button {
+  font-size: 1.45rem;
+  text-align: left;
+}
 .btc-accordion .card {
-    cursor: pointer;
-    color: black;
-    background-color: #f2f2f2;
+  cursor: pointer;
+  color: black;
+  background-color: #f2f2f2;
 }
 
 .btc-accordion .card a {
-    color: #f2f2f2;
-    text-decoration: none;
+  color: #f2f2f2;
+  text-decoration: none;
 }
 
 .accordion-icon[aria-expanded="false"] .fa-angle-down {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
 
 .accordion-icon[aria-expanded="true"] .fa-angle-down {
-    transform: rotate(180deg);
-    transition: 0.5s;
+  transform: rotate(180deg);
+  transition: 0.5s;
 }
 
-.ask-heading{
-    font-size: 50px;
-    font-weight: 700;
+.ask-heading {
+  font-size: 50px;
+  font-weight: 700;
 }
 
-.color{
-    color: #1f1d1d;
+.color {
+  color: #1f1d1d;
 }
-
