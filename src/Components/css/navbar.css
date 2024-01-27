@@ -109,6 +109,7 @@ a {
 }
 
 
+
 @media screen and (max-width: 990px){
  
   .list-group > a {
@@ -124,5 +125,14 @@ a {
 .profile-icon{
   margin-top: 1rem;
   text-align: center;
+}
+.dropdown-menu{
+ position: relative !important;
+    top: -35px !important;
+    left: 35% !important;
+    width: 0 !important;
+}
+.list-group-item{
+      width: 170px !important;
 }
 }

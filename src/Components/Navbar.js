@@ -78,7 +78,7 @@ const Navbar = () => {
                             Courses
                           </MDBDropdownToggle>
                           <MDBDropdownMenu
-                            className="mt-0  justify-content-center"
+                            className="mt-0 justify-content-center"
                             style={{
                               borderTopLeftRadius: "0",
                               borderTopRightRadius: "0",
@@ -91,7 +91,10 @@ const Navbar = () => {
                                   lg="12"
                                   className="div-categ-back mb-3 mb-lg-0"
                                 >
-                                  <MDBListGroup flush>
+                                  <MDBListGroup
+                                    flush
+                                    style={{ width: "max-content" }}
+                                  >
                                     <MDBListGroupItem
                                       className="text-uppercase font-weight-bold "
                                       tag="a"

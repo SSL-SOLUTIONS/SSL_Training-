@@ -64,8 +64,16 @@ function Footer() {
         </div>
         <hr />
         <div className="container">
-          <div className="row mt-5">
-            <div className="col-lg-4">
+          <div
+            className="row mt-5  footer"
+            style={{ display: "flex", justifyContent: "space-between" }}
+          >
+            <div
+              className="col-lg-4 f-1"
+              style={{
+                width: "auto",
+              }}
+            >
               <ul className="social-network social-circle">
                 {/* <li><a href="#" className="icoRss" title="Rss"><i className="fa fa-rss"></i></a></li> */}
                 <li>
@@ -101,15 +109,15 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="power-container col-lg-4 col-md-6 by">
-              <h5 className="text-light">
-                Powered By{" "}
-                <span>
-                  <img className="powered-img" src="/sslsolution.png"></img>
-                </span>
-              </h5>
+            <div className="power-container col-lg-4 col-md-6 by f-2">
+              <div className="inner-power">
+                <h5 className="text-light">Powered By:</h5>
+                <Link to="http://sslsolution.net/" target="_blank">
+                  <img className="powered-img" src="/sslsolution.png" />
+                </Link>
+              </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6 f3">
               <p className="text-light text-right mt-3">
                 © 2023 SSL TRAINING - All rights reserved
               </p>
