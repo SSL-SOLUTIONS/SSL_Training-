@@ -5,7 +5,7 @@ import { Button, Card, Container, Row, Col, Alert } from "react-bootstrap";
 import Countdown from "react-countdown-now";
 import { Link, useNavigate } from "react-router-dom";
 import "./Quiz.css";
-
+import "../../index.css"
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
   const [answers, setAnswers] = useState({});
@@ -201,7 +201,7 @@ const Quiz = () => {
         <p className="lead">Subtotal Marks: {result.subtotalMarks}</p>
         <Link to="/courses" style={{ color: "white" }}>
           {" "}
-          <Button className="visit-btn m-3 btn-lg"> Visit Courses</Button>{" "}
+          <button className="universalGreenBtn" style={{borderRadius:"5px", marginBottom: "1rem"}}> Visit Courses</button>{" "}
         </Link>
       </div>
     );
