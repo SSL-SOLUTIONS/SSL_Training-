@@ -89,6 +89,16 @@ function Footer() {
                     <i className="fa-brands fa-linkedin-in"></i>
                   </a>
                 </li>
+                <li>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=923444997389"
+                    className="icoWhatsapp"
+                    title="Whatsapp"
+                    target="_blank"
+                  >
+                    <i className="fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="power-container col-lg-4 col-md-6 by">

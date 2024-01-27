@@ -1,6 +1,6 @@
 import React from "react";
 import "../Components/css/rightsolution.css";
-
+import "../index.css"
 function RightSolution() {
   return (
     <div>
@@ -20,7 +20,7 @@ function RightSolution() {
                   <input className="" type="email" placeholder="Your email" />{" "}
                   <br />
                   <br />
-                  <button className="btn btn-primary">Subscribe</button>
+                  <button className="universalGreenBtn">Subscribe</button>
                 </div>
               </div>
             </div>

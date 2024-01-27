@@ -7,7 +7,7 @@
     z-index: 999;
     opacity: 1;
     bottom: 50px;
-    animation: animateWave 2s linear infinite;
+    /* animation: animateWave 2s linear infinite; */
     padding-top: 30px;
     padding-left: 30px;
   }
@@ -36,16 +36,8 @@
 
 }
 
-.right-input button{
-    background-color: white;
-    border-radius: 5px;
-    color: rgb(18, 135, 111);
-    width: 120px;
-    height: 40px;
-    
-}
 
-  
+/*   
 @keyframes animateWave {
     0% {
       transform: translateY(0);
@@ -58,4 +50,4 @@
     100% {
       transform: translateY(0);
     }
-  }
+  } */

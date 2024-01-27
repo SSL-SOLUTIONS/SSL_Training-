@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./css/carouselCard.css"
 function CarouselCard() {
   return (
     <div>
@@ -9,7 +9,7 @@ function CarouselCard() {
             <div className="col-6"></div>
             <div className="col-6 text-right">
               <a
-                className="btn btn-primary mb-3 mr-1"
+                className="arrow-carousel btn btn-primary mb-3 mr-1"
                 href="#carouselExampleIndicators2"
                 role="button"
                 data-slide="prev"
@@ -17,7 +17,7 @@ function CarouselCard() {
                 <i className="fa fa-arrow-left"></i>
               </a>
               <a
-                className="btn btn-primary mb-3 "
+                className="arrow-carousel   btn btn-primary mb-3 "
                 href="#carouselExampleIndicators2"
                 role="button"
                 data-slide="next"

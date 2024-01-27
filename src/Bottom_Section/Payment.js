@@ -2,7 +2,7 @@ import React from "react";
 import "../Bottom_Section/css/payment.css";
 import Still from "./Still";
 import { Link } from "react-router-dom";
-
+import "../index.css"
 function Payment() {
   return (
     <div>
@@ -73,9 +73,7 @@ function Payment() {
                       <li className="mb-4">
                         <Link to="/request-demo">
                           {" "}
-                          <button className="btn btn-outline-primary py-2 w-50">
-                            Buy Now
-                          </button>
+                          <button className="universalGreenBtn">Buy Now</button>
                         </Link>
                       </li>
                     </div>
@@ -106,9 +104,7 @@ function Payment() {
                     <li className="mb-4">
                       <Link to="/request-demo">
                         {" "}
-                        <button className="btn btn-primary py-2 w-50">
-                          Buy now
-                        </button>
+                        <button className="universalGreenBtn">Buy now</button>
                       </Link>
                     </li>
                   </div>
@@ -136,7 +132,7 @@ function Payment() {
                     <li className="mb-4">
                       <Link to="/contact">
                         {" "}
-                        <button className="btn btn-outline-primary w-50 py-2">
+                        <button className="universalGreenBtn">
                           Contact Us
                         </button>
                       </Link>

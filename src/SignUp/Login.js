@@ -80,7 +80,6 @@ const Login = () => {
           <div className="col-lg-5  mt-5 pt-5">
             <div className="heading-signup">
               <div className="power-cont">
-                <span>Powered By: </span>
                 <img className="power-img" src="/logo.png" alt="logo" />
               </div>
               <h4 className="mt-4 ml-3">
