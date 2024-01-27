@@ -40,7 +40,7 @@ function Footer() {
               <div className="footer-number">
                 <h5 className="invisible">Information</h5>
                 <li>
-                  <Link to="privacy">Privacy Policy</Link>
+                  <Link to="/privacy">Privacy Policy</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact Us</Link>

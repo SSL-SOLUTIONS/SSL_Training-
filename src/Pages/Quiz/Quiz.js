@@ -15,7 +15,7 @@ const Quiz = () => {
   const [result, setResult] = useState(null);
   const [quizQuit, setQuizQuit] = useState(false);
   const [nextButtonDisabled, setNextButtonDisabled] = useState(true);
-  const [timeRemaining, setTimeRemaining] = useState(20); // Initial time in seconds
+  const [timeRemaining, setTimeRemaining] = useState(300); // Initial time in seconds
   const navigate = useNavigate();
   const [timer, setTimer] = useState(null);
 
