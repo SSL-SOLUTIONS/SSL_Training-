@@ -96,7 +96,7 @@
         if (!user) {
           return res
             .status(401)
-            .json({ message: "User not found with this Email or invalid email" });
+            .json({ message: "User not registered" });
         }
 
         const passwordMatch = await bcrypt.compare(password, user.password);
