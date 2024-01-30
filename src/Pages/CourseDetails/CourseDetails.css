@@ -39,21 +39,23 @@
 }
 
 .course-details-section,
-.top-companies,
 .additional-courses-section,
 .course-instructor-cont {
   width: 70vw;
-  border: 1px solid #dfdede;
+  border: 1px solid #f1f1f1;
   margin: 2rem 3rem;
 }
-
+.top-companies {
+  margin: 1rem;
+}
 .course-instructor-cont {
   display: flex;
   justify-content: start;
   padding: 2rem;
 }
 .additional-courses-section > h3 {
-  background-color: #f1eded;
+  background-color: #F8F9FA;
+      font-family: monospace;
   text-align: center;
   height: 2.5rem;
 }
@@ -61,8 +63,9 @@
   margin: 0 1rem;
 }
 .course-details-section > h4 {
-  background-color: rgb(228 235 234);
+  background-color: #f8f9fa;
   padding: 0.5rem 1rem;
+  font-family: monospace;
 }
 
 .details-sections {
