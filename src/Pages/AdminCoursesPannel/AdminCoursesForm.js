@@ -92,7 +92,13 @@ const AdminCoursesForm = ({ onAddCourse }) => {
         onAddCourse(response.data);
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      // Handle errors from the server
+      if (error.response && error.response.status === 409) {
+        // Duplicate course entry
+        alert("Course already exists. Please choose a different title.");
+      } else {
+        console.error("Error submitting form:", error);
+      }
     }
   };
 

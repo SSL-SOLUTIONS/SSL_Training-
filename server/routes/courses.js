@@ -46,6 +46,17 @@ router.post(
         instructorDescription,
       } = req.body;
 
+       const existingCourse = await Course.findOne({
+         where: {
+           title,
+         },
+       });
+
+  if (existingCourse) {
+    // Handle duplicate course entry
+     return res.status(409).json({ error: "Course already exists" });
+  }
+
       const image =
         req.files && req.files["image"] ? req.files["image"][0].filename : "";
       const instructorImage =

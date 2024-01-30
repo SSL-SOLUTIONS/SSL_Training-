@@ -36,16 +36,17 @@ const Demo = () => {
         "/requestDemo/upload",
         formData
       );
+      
+      showAlert(
+        "Demo request sent successfully. Our team will reach out to you soon.",
+        "success"
+      );
       setFormData({
         Name: "",
         companyName: "",
         companySize: "",
         email: "",
       });
-      showAlert(
-        "Demo request sent successfully. Our team will reach out to you soon.",
-        "success"
-      );
     } catch (error) {
       console.error("Error submitting demo request:", error);
       showAlert(
