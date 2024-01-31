@@ -5,7 +5,7 @@ import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import "../../index.css"
 function UserProfile() {
   const navigate = useNavigate();
   const [profilePicture, setProfilePicture] = useState(null);
@@ -248,7 +248,8 @@ function UserProfile() {
                         type="button"
                         id="submit"
                         name="submit"
-                        className="ml-3 btn btn-primary"
+                        className="ml-3 universalGreenBtn"
+                        style={{padding:"0.4rem 0.1rem", width:"75px"}}
                         onClick={handleUpdate}
                       >
                         Update

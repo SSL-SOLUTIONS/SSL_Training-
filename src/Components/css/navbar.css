@@ -51,8 +51,8 @@ a {
 .navbar-nav li a {
   color: black;
   font-weight: 600;
+  text-decoration: none;
 }
-
 .categories > label {
   display: inline-block;
   font-weight: 600;
@@ -134,5 +134,9 @@ a {
 }
 .list-group-item{
       width: 170px !important;
+}
+
+.navbar > .container{
+  padding: 1rem;
 }
 }

@@ -208,7 +208,7 @@ function Pricing() {
                   What type of candidates does SSL Training target?
                 </button>
                 <i
-                  className="fa-solid fa-caret-up caret"
+                  className="fa-solid fa-caret-down caret"
                   data-toggle="collapse"
                   data-target="#collapseOne"
                   aria-expanded="true"
@@ -237,7 +237,7 @@ function Pricing() {
                   What can I Learn from SSL Trainings?{" "}
                 </button>
                 <i
-                  className="fa-solid fa-caret-up caret"
+                  className="fa-solid fa-caret-down caret"
                   data-toggle="collapse"
                   data-target="#collapseTwo"
                   aria-expanded="false"

@@ -5,7 +5,7 @@ import RightSolution from "../Components/RightSolution";
 const Question = () => {
   return (
     <div className="container-fluid question-bg">
-      <div className="container question-wrapper text-center mt-5">
+      <div className="container question-wrapper text-center mt-5 mb-5">
         <h1 className="pt-5 black">Frequently asked questions</h1>
         <h5 className="color mb-3">
           Discover answers to various questions in our extensive FAQs section.

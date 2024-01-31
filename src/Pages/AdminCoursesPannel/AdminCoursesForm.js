@@ -103,8 +103,18 @@ const AdminCoursesForm = ({ onAddCourse }) => {
   };
 
   return (
-    <div className="container mb-5 mt-5">
-      <h2>Add New Course</h2>
+    <div
+      className="container mb-5 mt-5"
+      style={{
+        boxShadow: "0px 0px 9px -1px #c7c7c7",
+        padding: "1rem",
+        borderRadius: "10px",
+        fontFamily: "monospace",
+      }}
+    >
+      <center>
+        <h1>Add New Course</h1>
+      </center>
       <Form
         onSubmit={handleSubmit}
         encType="multipart/form-data"

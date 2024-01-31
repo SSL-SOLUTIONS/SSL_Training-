@@ -12,6 +12,9 @@
 .card-header > h5 > button{
         color: black;
 }
+.card-header > h5 > .fa-caret-down{
+    color: white !important;
+}
 .pricing-btn:hover{
     background-color: white;
     border: 1px solid rgb(18, 135, 111);

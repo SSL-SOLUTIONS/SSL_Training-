@@ -22,7 +22,7 @@ function Evaluate() {
       <div className="container-fluid evaluate-main">
         <div className="row">
           <div className="col-lg-4 tab">
-            <div className="content border rounded text-center">
+            <div className="content border rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/easy-goal-setting.svg"></img>
               </div>
@@ -35,7 +35,7 @@ function Evaluate() {
           </div>
 
           <div className="col-lg-4 tab">
-            <div className="content border rounded text-center">
+            <div className="content border rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/personalized-tracking.svg"></img>
               </div>
@@ -49,7 +49,7 @@ function Evaluate() {
           </div>
 
           <div className="col-lg-4 tab">
-            <div className="content border rounded text-center">
+            <div className="content border rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/actionable-insights.svg"></img>
               </div>
@@ -64,7 +64,7 @@ function Evaluate() {
 
         <div className="row mt-1">
           <div className="col-lg-4 tab">
-            <div className="content border rounded text-center">
+            <div className="content border rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/collaboration.svg"></img>
               </div>
@@ -77,7 +77,7 @@ function Evaluate() {
           </div>
 
           <div className="col-lg-4 tab">
-            <div className="content border rounded text-center">
+            <div className="content border rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/mobile-accessibility.svg"></img>
               </div>
@@ -90,7 +90,7 @@ function Evaluate() {
           </div>
 
           <div className="col-lg-4 tab">
-            <div className="content border mb-5 rounded text-center">
+            <div className="content border mb-5 rounded text-center evaluate-cards">
               <div className="mt-4 eveluate-image">
                 <img src="https://testrabbit.co/wp-content/uploads/2023/05/easy-goal-setting.svg"></img>
               </div>

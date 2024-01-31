@@ -51,10 +51,21 @@ const QuizForm = () => {
   return (
     <>
       <Navbar />
-      <Container className="mt-3 mb-3">
+      <Container
+        className="mt-5 mb-5"
+        style={{
+          boxShadow: "0px 0px 9px -1px #c7c7c7",
+          padding: "1rem",
+          borderRadius: "10px",
+          fontFamily: "monospace",
+        }}
+      >
         <Row>
           <Col md={{ span: 6, offset: 3 }}>
-            <h2>Add Quiz Question</h2>
+            <center>
+              {" "}
+              <h2>Add Quiz Question</h2>
+            </center>
             <Form onSubmit={handleSubmit}>
               <Form.Group controlId="questionText">
                 <Form.Label>Question Text</Form.Label>
@@ -64,6 +75,7 @@ const QuizForm = () => {
                   value={formData.questionText}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
@@ -75,6 +87,7 @@ const QuizForm = () => {
                   value={formData.option1}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
@@ -86,6 +99,7 @@ const QuizForm = () => {
                   value={formData.option2}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
@@ -97,6 +111,7 @@ const QuizForm = () => {
                   value={formData.option3}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
@@ -108,6 +123,7 @@ const QuizForm = () => {
                   value={formData.option4}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
@@ -119,6 +135,7 @@ const QuizForm = () => {
                   value={formData.correctOption}
                   onChange={handleChange}
                   required
+                  style={{ outline: "none", border: "1px solid #12876F" }}
                 />
               </Form.Group>
 
